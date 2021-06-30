@@ -67,6 +67,8 @@ enum DataType {
   DT_UINT32_REF = 122;
   DT_UINT64_REF = 123;
   DT_POSIT160 = 24;  
+  DT_POSIT160_REF = 124;  
+
 }
 // LINT.ThenChange(
 //    https://www.tensorflow.org/code/tensorflow/c/tf_datatype.h,

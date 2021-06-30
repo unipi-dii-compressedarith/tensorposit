@@ -28,12 +28,12 @@ from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
 from tensorflow.python.framework import _dtypes
 from tensorflow.python.types import doc_typealias
 from tensorflow.python.lib.core import _pywrap_bfloat16
-from tensorflow.python.lib.core import _pywrap_posit16
+from tensorflow.python.lib.core import _pywrap_posit160
 
 from tensorflow.python.util.tf_export import tf_export
 
 _np_bfloat16 = _pywrap_bfloat16.TF_bfloat16_type()
-_np_posit16 = _pywrap_posit16.TF_posit16_type()
+_np_posit160 = _pywrap_posit160.TF_posit160_type()
 
 
 @tf_export("dtypes.DType", "DType")
@@ -420,7 +420,7 @@ _INTERN_TABLE = {
     types_pb2.DT_QUINT16: quint16,
     types_pb2.DT_QINT32: qint32,
     types_pb2.DT_BFLOAT16: bfloat16,
-    types_pb2.DT_posit160: posit160,
+    types_pb2.DT_POSIT160: posit160,
     types_pb2.DT_RESOURCE: resource,
     types_pb2.DT_VARIANT: variant,
     types_pb2.DT_HALF_REF: float16_ref,
@@ -496,6 +496,7 @@ _TYPE_TO_STRING = {
     types_pb2.DT_QUINT16_REF: "quint16_ref",
     types_pb2.DT_QINT32_REF: "qint32_ref",
     types_pb2.DT_BFLOAT16_REF: "bfloat16_ref",
+    types_pb2.DT_POSIT160_REF: "posit160_ref",
     types_pb2.DT_RESOURCE_REF: "resource_ref",
     types_pb2.DT_VARIANT_REF: "variant_ref",
 }
@@ -664,7 +665,7 @@ _TF_TO_NP = {
     types_pb2.DT_BFLOAT16_REF:
         _np_bfloat16,
     types_pb2.DT_POSIT160_REF:
-        _np_bfloat160,        
+        _np_posit160,        
 }
 
 _QUANTIZED_DTYPES_NO_REF = frozenset([qint8, quint8, qint16, quint16, qint32])

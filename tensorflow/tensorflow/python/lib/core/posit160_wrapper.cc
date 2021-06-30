@@ -19,6 +19,6 @@ limitations under the License.
 PYBIND11_MODULE(_pywrap_posit160, m) {
   tensorflow::RegisterNumpyPosit160();
 
-  m.def("TF_bfloat16_type",
+  m.def("TF_posit160_type",
         [] { return pybind11::handle(tensorflow::Posit160Dtype()); });
 }

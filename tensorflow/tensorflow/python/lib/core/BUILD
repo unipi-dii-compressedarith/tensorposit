@@ -106,6 +106,7 @@ cc_library(
     ),
     deps = [
         ":bfloat16_lib",
+        ":posit160_lib",
         ":numpy_lib",
         "//tensorflow/c:c_api_no_xla",
         "//tensorflow/core:lib",

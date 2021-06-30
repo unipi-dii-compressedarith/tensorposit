@@ -1292,7 +1292,7 @@ struct NextAfter {
 }  // namespace
 
 // Initializes the module.
-bool Initialize() {
+bool InitializeP160() {
   ImportNumpy();
   import_umath1(false);
 
@@ -1621,7 +1621,7 @@ bool RegisterNumpyPosit160() {
     // Already initialized.
     return true;
   }
-  if (!Initialize()) {
+  if (!InitializeP160()) {
     if (!PyErr_Occurred()) {
       PyErr_SetString(PyExc_RuntimeError, "cannot load posit160 module.");
     }

@@ -57,7 +57,7 @@ keras_optimizers_gauge = monitoring.BoolGauge(
 
 _DEFAULT_VALID_DTYPES = frozenset([
     dtypes.float16, dtypes.bfloat16, dtypes.float32, dtypes.float64,
-    dtypes.complex64, dtypes.complex128
+    dtypes.complex64, dtypes.complex128, dtypes.posit160
 ])
 
 

@@ -281,7 +281,7 @@ byte_swappable = [
     dtypes.float16, dtypes.float32, dtypes.float64, dtypes.bfloat16,
     dtypes.complex64, dtypes.complex128, dtypes.uint16, dtypes.uint32,
     dtypes.uint64, dtypes.int16, dtypes.int32, dtypes.int64, dtypes.qint16,
-    dtypes.quint16, dtypes.qint32
+    dtypes.quint16, dtypes.qint32, dtypes.posit160
 ]
 
 
