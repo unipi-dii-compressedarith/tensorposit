@@ -225,6 +225,9 @@ bool DataTypeFromString(StringPiece sp, DataType* dt) {
   } else if (sp == "bfloat16") {
     *dt = DT_BFLOAT16;
     return true;
+  } else if (sp == "posit160") {
+    *dt = DT_POSIT160;
+    return true;    
   } else if (sp == "half" || sp == "float16") {
     *dt = DT_HALF;
     return true;

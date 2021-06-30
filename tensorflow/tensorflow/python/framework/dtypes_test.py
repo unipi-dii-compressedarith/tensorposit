@@ -132,6 +132,7 @@ class TypesTest(test_util.TensorFlowTestCase):
     self.assertIs(dtypes.quint8, dtypes.as_dtype("quint8"))
     self.assertIs(dtypes.qint32, dtypes.as_dtype("qint32"))
     self.assertIs(dtypes.bfloat16, dtypes.as_dtype("bfloat16"))
+    self.assertIs(dtypes.posit160, dtypes.as_dtype("posit160"))
     self.assertIs(dtypes.float32_ref, dtypes.as_dtype("float32_ref"))
     self.assertIs(dtypes.float64_ref, dtypes.as_dtype("float64_ref"))
     self.assertIs(dtypes.int32_ref, dtypes.as_dtype("int32_ref"))
@@ -147,6 +148,7 @@ class TypesTest(test_util.TensorFlowTestCase):
     self.assertIs(dtypes.quint8_ref, dtypes.as_dtype("quint8_ref"))
     self.assertIs(dtypes.qint32_ref, dtypes.as_dtype("qint32_ref"))
     self.assertIs(dtypes.bfloat16_ref, dtypes.as_dtype("bfloat16_ref"))
+    self.assertIs(dtypes.posit160_ref, dtypes.as_dtype("posit160_ref"))
     with self.assertRaises(TypeError):
       dtypes.as_dtype("not_a_type")
 

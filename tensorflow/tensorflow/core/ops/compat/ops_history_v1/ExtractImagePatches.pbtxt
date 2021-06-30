@@ -156,7 +156,8 @@ op {
         type: DT_HALF
         type: DT_UINT32
         type: DT_UINT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
       }
     }
   }
@@ -211,7 +212,8 @@ op {
         type: DT_INT16
         type: DT_INT8
         type: DT_INT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -263,7 +265,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE

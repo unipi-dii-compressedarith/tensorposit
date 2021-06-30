@@ -33891,7 +33891,9 @@ op {
     allowed_values {
       list {
         type: DT_FLOAT
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160 
+        type: DT_POSIT160
       }
     }
   }
@@ -33904,7 +33906,9 @@ op {
     allowed_values {
       list {
         type: DT_FLOAT
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160 
+        type: DT_POSIT160
       }
     }
   }

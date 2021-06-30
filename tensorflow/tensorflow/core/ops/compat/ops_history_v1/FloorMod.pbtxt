@@ -46,7 +46,8 @@ op {
       list {
         type: DT_INT32
         type: DT_INT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -74,7 +75,8 @@ op {
       list {
         type: DT_INT32
         type: DT_INT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -104,7 +106,8 @@ op {
         type: DT_INT32
         type: DT_INT64
         type: DT_UINT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE

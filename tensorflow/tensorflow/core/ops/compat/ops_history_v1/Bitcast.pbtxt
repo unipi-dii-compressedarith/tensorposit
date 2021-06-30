@@ -127,7 +127,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT64
@@ -152,7 +153,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT64
@@ -188,7 +190,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -213,7 +216,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -249,7 +253,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -276,7 +281,8 @@ op {
     type: "type"
     allowed_values {
       list {
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE

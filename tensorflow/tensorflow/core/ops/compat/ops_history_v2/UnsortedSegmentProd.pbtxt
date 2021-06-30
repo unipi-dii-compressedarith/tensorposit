@@ -28,7 +28,8 @@ op {
         type: DT_INT16
         type: DT_INT8
         type: DT_INT64
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -94,7 +95,8 @@ op {
         type: DT_QINT8
         type: DT_QUINT8
         type: DT_QINT32
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF

@@ -35,7 +35,8 @@ op {
         type: DT_QINT8
         type: DT_QUINT8
         type: DT_QINT32
-        type: DT_BFLOAT16
+        type: DT_BFLOAT16 
+        type: DT_POSIT160
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF

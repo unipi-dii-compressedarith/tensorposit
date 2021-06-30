@@ -236,6 +236,7 @@ def TF_Float16Ref : TF_TensorFlowType<"HalfRef", "f16ref">;
 def TF_Float32Ref : TF_TensorFlowType<"FloatRef", "f32ref">;
 def TF_Float64Ref : TF_TensorFlowType<"DoubleRef", "f64ref">;
 def TF_Bfloat16Ref : TF_TensorFlowType<"Bfloat16Ref", "bf16ref">;
+//def TF_Posit160Ref : TF_TensorFlowType<"Posit160Ref", "posit160ref">;
 
 // Complex reference types
 def TF_Complex64Ref : TF_TensorFlowType<"Complex64Ref", "complex64ref">;
@@ -338,6 +339,7 @@ def TF_Float16 : AnyTypeOf<[F16, TF_Float16Ref], "16-bit float">;
 def TF_Float32 : AnyTypeOf<[F32, TF_Float32Ref], "32-bit float">;
 def TF_Float64 : AnyTypeOf<[F64, TF_Float64Ref], "64-bit float">;
 def TF_Bfloat16 : AnyTypeOf<[BF16, TF_Bfloat16Ref], "bfloat16">;
+//def TF_Posit160 : AnyTypeOf<[BF16, TF_Posit160Ref], "posit160">;
 
 def TF_F32OrF64 : AnyTypeOf<[TF_Float32, TF_Float64], "32/64-bit float">;
 
@@ -352,6 +354,7 @@ def TF_Float16Tensor : TensorOf<[TF_Float16]>;
 def TF_Float32Tensor : TensorOf<[TF_Float32]>;
 def TF_Float64Tensor : TensorOf<[TF_Float64]>;
 def TF_Bfloat16Tensor : TensorOf<[TF_Bfloat16]>;
+//def TF_Posit160Tensor : TensorOf<[TF_Posit160]>;
 
 //===----------------------------------------------------------------------===//
 // Complex types (including corresponding reference types)

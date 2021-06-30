@@ -12,6 +12,12 @@ tf_module {
     name: "bfloat16"
     mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
   }
+
+  member {
+    name: "posit160"
+    mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
+  }
+
   member {
     name: "bool"
     mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
