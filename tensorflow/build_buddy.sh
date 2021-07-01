@@ -7,4 +7,4 @@ bazel build //tensorflow/tools/pip_package:build_pip_package \
     --verbose_failures \
     --jobs=200 \
     --nogoogle_default_credentials \
-    --remote_header=x-buildbuddy-api-key=PCiJWYpP8gN8QCivcMsC
+    --remote_header=x-buildbuddy-api-key=$(BUILD_BUDDY_API_KEY)
