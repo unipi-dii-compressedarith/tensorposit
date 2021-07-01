@@ -17,7 +17,7 @@ limitations under the License.
 #include "tensorflow/core/kernels/cwise_ops_gradients.h"
 
 namespace tensorflow {
-REGISTER6(UnaryOp, CPU, "Atanh", functor::atanh, Eigen::half, bfloat16, float,
+REGISTER7(UnaryOp, CPU, "Atanh", functor::atanh, Eigen::half, bfloat16,posit160, float,
           double, complex64, complex128);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM

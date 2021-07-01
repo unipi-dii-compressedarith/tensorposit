@@ -19,7 +19,7 @@ limitations under the License.
 namespace tensorflow {
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER3(UnaryOp, CPU, "Tanh", functor::tanh, float, Eigen::half, double);
+REGISTER4(UnaryOp, CPU, "Tanh", functor::tanh, float, Eigen::half,posit160, double);
 #endif
 REGISTER3(UnaryOp, CPU, "Tanh", functor::tanh, bfloat16, complex64, complex128);
 

@@ -19,7 +19,7 @@ namespace tensorflow {
 
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER6(UnaryOp, CPU, "Sqrt", functor::sqrt, float, Eigen::half, double,
+REGISTER7(UnaryOp, CPU, "Sqrt", functor::sqrt, float, Eigen::half, double,posit160,
           bfloat16, complex64, complex128);
 #else
 REGISTER3(UnaryOp, CPU, "Sqrt", functor::sqrt, bfloat16, complex64, complex128);
@@ -31,7 +31,7 @@ REGISTER3(UnaryOp, GPU, "Sqrt", functor::sqrt, float, Eigen::half, double);
 #endif
 #endif
 
-REGISTER6(SimpleBinaryOp, CPU, "SqrtGrad", functor::sqrt_grad, float,
+REGISTER7(SimpleBinaryOp, CPU, "SqrtGrad", functor::sqrt_grad, float,posit160,
           Eigen::half, bfloat16, double, complex64, complex128);
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 REGISTER3(SimpleBinaryOp, GPU, "SqrtGrad", functor::sqrt_grad, float,

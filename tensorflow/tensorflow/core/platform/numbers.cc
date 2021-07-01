@@ -13,14 +13,14 @@ limitations under the License.
 ==============================================================================*/
 
 #include "tensorflow/core/platform/numbers.h"
-
+#define __STDC_FORMAT_MACROS 1
 #include <ctype.h>
 #include <float.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 #include <algorithm>
-#include <cinttypes>
+#include <inttypes.h>
 #include <cmath>
 #include <locale>
 #include <unordered_map>
@@ -408,7 +408,7 @@ std::string FpToString(Fprint fp) {
 bool StringToFp(const std::string& s, Fprint* fp) {
   char junk;
   uint64_t result;
-  if (sscanf(s.c_str(), "%" SCNx64 "%c", &result, &junk) == 1) {
+  if (sscanf(s.c_str(), "%" "llX" "%c", &result, &junk) == 1) {
     *fp = result;
     return true;
   } else {

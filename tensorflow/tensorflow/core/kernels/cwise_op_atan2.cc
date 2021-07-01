@@ -17,7 +17,7 @@ limitations under the License.
 
 namespace tensorflow {
 
-REGISTER4(BinaryOp, CPU, "Atan2", functor::atan2, Eigen::half, bfloat16, float,
+REGISTER5(BinaryOp, CPU, "Atan2", functor::atan2, Eigen::half, bfloat16,posit160, float,
           double);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM

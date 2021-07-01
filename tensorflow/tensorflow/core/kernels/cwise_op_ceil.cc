@@ -19,7 +19,7 @@ namespace tensorflow {
 
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER4(UnaryOp, CPU, "Ceil", functor::ceil, float, Eigen::half, bfloat16,
+REGISTER5(UnaryOp, CPU, "Ceil", functor::ceil, float, Eigen::half, bfloat16,posit160,
           double);
 #else
 REGISTER(UnaryOp, CPU, "Ceil", functor::ceil, bfloat16);

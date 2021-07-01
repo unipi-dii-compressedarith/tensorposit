@@ -16,7 +16,7 @@ limitations under the License.
 #include "tensorflow/core/kernels/cwise_ops_common.h"
 
 namespace tensorflow {
-REGISTER4(BinaryOp, CPU, "Maximum", functor::maximum, float, Eigen::half,
+REGISTER5(BinaryOp, CPU, "Maximum", functor::maximum, float, Eigen::half,posit160,
           bfloat16, double);
 REGISTER8(BinaryOp, CPU, "Maximum", functor::maximum, int8, uint8, int16,
           uint16, int32, uint32, int64, uint64);

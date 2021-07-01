@@ -26,6 +26,7 @@ limitations under the License.
 #include "tensorflow/core/lib/core/status.h"
 #include "tensorflow/core/lib/hash/hash.h"
 #include "tensorflow/core/platform/bfloat16.h"
+#include "tensorflow/core/platform/posit.h"
 
 namespace tensorflow {
 namespace {
@@ -66,6 +67,11 @@ struct UniqueOpHashMap<Eigen::half, TIndex> {
 template <typename TIndex>
 struct UniqueOpHashMap<bfloat16, TIndex> {
   using map_type = std::unordered_map<bfloat16, TIndex>;
+};
+
+template <typename TIndex>
+struct UniqueOpHashMap<posit160, TIndex> {
+  using map_type = std::unordered_map<posit160, TIndex>;
 };
 
 // `UniqueOp` computes the unique elements in the input tensor.

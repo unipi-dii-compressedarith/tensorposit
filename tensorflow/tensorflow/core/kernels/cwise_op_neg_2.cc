@@ -16,7 +16,7 @@ limitations under the License.
 #include "tensorflow/core/kernels/cwise_ops_common.h"
 
 namespace tensorflow {
-REGISTER6(UnaryOp, CPU, "Neg", functor::neg, Eigen::half, float, double,
+REGISTER7(UnaryOp, CPU, "Neg", functor::neg, Eigen::half, float, double,posit160,
           bfloat16, complex64, complex128);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM

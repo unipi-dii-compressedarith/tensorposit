@@ -17,9 +17,9 @@ limitations under the License.
 
 namespace tensorflow {
 
-REGISTER6(BinaryOp, CPU, "Mul", functor::mul, float, Eigen::half, double, uint8,
-          int32, bfloat16);
-REGISTER6(BinaryOp, CPU, "MulNoNan", functor::mul_no_nan, Eigen::half, float,
+REGISTER7(BinaryOp, CPU, "Mul", functor::mul, float, Eigen::half, double, uint8,
+          int32,posit160, bfloat16);
+REGISTER7(BinaryOp, CPU, "MulNoNan", functor::mul_no_nan, Eigen::half, float,posit160,
           double, complex64, complex128, bfloat16);
 
 #if defined(__ANDROID_TYPES_SLIM__)

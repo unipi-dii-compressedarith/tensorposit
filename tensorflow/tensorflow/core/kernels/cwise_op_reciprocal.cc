@@ -32,7 +32,7 @@ REGISTER3(SimpleBinaryOp, GPU, "InvGrad", functor::inverse_grad, float,
           Eigen::half, double);
 #endif
 
-REGISTER6(UnaryOp, CPU, "Reciprocal", functor::inverse, float, Eigen::half,
+REGISTER7(UnaryOp, CPU, "Reciprocal", functor::inverse, float, Eigen::half,posit160,
           bfloat16, double, complex64, complex128);
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)
@@ -41,7 +41,7 @@ REGISTER6(UnaryOp, GPU, "Reciprocal", functor::inverse, float, Eigen::half,
 #endif
 #endif
 
-REGISTER6(SimpleBinaryOp, CPU, "ReciprocalGrad", functor::inverse_grad, float,
+REGISTER7(SimpleBinaryOp, CPU, "ReciprocalGrad", functor::inverse_grad, float,posit160,
           Eigen::half, bfloat16, double, complex64, complex128);
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 REGISTER3(SimpleBinaryOp, GPU, "ReciprocalGrad", functor::inverse_grad, float,

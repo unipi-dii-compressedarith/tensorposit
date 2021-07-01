@@ -16,7 +16,7 @@ limitations under the License.
 #include "tensorflow/core/kernels/cwise_ops_common.h"
 
 namespace tensorflow {
-REGISTER8(BinaryOp, CPU, "Sub", functor::sub, float, Eigen::half, double, int32,
+REGISTER9(BinaryOp, CPU, "Sub", functor::sub, float, Eigen::half, double, int32,posit160,
           int64, bfloat16, complex64, complex128);
 #if !defined(__ANDROID_TYPES_SLIM__)
 // Sub op for int8, uint8, int16, uint16
