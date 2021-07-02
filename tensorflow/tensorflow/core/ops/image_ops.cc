@@ -264,7 +264,7 @@ REGISTER_OP("ResizeArea")
     .Output("resized_images: float")
     .Attr(
         "T: {int8, uint8, int16, uint16, int32, int64, half, float, double,"
-        "bfloat16}")
+        "bfloat16,posit160}")
     .Attr("align_corners: bool = false")
     .SetShapeFn(ResizeShapeFn);
 
@@ -275,7 +275,7 @@ REGISTER_OP("ResizeBicubic")
     .Output("resized_images: float")
     .Attr(
         "T: {int8, uint8, int16, uint16, int32, int64, half, float, double,"
-        "bfloat16}")
+        "bfloat16,posit160}")
     .Attr("align_corners: bool = false")
     .Attr("half_pixel_centers: bool = false")
     .SetShapeFn(ResizeShapeFn);
@@ -299,8 +299,8 @@ REGISTER_OP("ResizeBilinear")
     .Input("size: int32")
     .Output("resized_images: float")
     .Attr(
-        "T: {int8, uint8, int16, uint16, int32, int64, bfloat16, half, "
-        "float, double, bfloat16}")
+        "T: {int8, uint8, int16, uint16, int32, int64, bfloat16,posit160, half, "
+        "float, double, bfloat16,posit160}")
     .Attr("align_corners: bool = false")
     .Attr("half_pixel_centers: bool = false")
     .SetShapeFn(ResizeShapeFn);
@@ -313,7 +313,7 @@ REGISTER_OP("ScaleAndTranslate")
     .Input("translation: float")
     .Output("resized_images: float")
     .Attr(
-        "T: {int8, uint8, int16, uint16, int32, int64, bfloat16, half, "
+        "T: {int8, uint8, int16, uint16, int32, int64, bfloat16,posit160, half, "
         "float, double}")
     .Attr("kernel_type: string = 'lanczos3'")
     .Attr("antialias: bool = true")
@@ -347,7 +347,7 @@ REGISTER_OP("ResizeBilinearGrad")
     .Input("grads: float")
     .Input("original_image: T")
     .Output("output: T")
-    .Attr("T: {float, bfloat16, half, double}")
+    .Attr("T: {float, bfloat16,posit160, half, double}")
     .Attr("align_corners: bool = false")
     .Attr("half_pixel_centers: bool = false")
     .SetShapeFn([](InferenceContext* c) {
@@ -377,7 +377,7 @@ REGISTER_OP("ResizeNearestNeighbor")
     .Output("resized_images: T")
     .Attr(
         "T: {int8, uint8, int16, uint16, int32, int64, half, float,"
-        "double, bfloat16}")
+        "double, bfloat16,posit160}")
     .Attr("align_corners: bool = false")
     .Attr("half_pixel_centers: bool = false")
     .SetShapeFn(ResizeShapeFn);
@@ -387,7 +387,7 @@ REGISTER_OP("ResizeNearestNeighborGrad")
     .Input("grads: T")
     .Input("size: int32")
     .Output("output: T")
-    .Attr("T: {uint8, int8, int32, half, float, double, bfloat16}")
+    .Attr("T: {uint8, int8, int32, half, float, double, bfloat16,posit160}")
     .Attr("align_corners: bool = false")
     .Attr("half_pixel_centers: bool = false")
     .SetShapeFn([](InferenceContext* c) {
@@ -636,14 +636,14 @@ REGISTER_OP("DecodeGif")
 REGISTER_OP("RGBToHSV")
     .Input("images: T")
     .Output("output: T")
-    .Attr("T: {half, bfloat16, float, double} = DT_FLOAT")
+    .Attr("T: {half, bfloat16,posit160, float, double} = DT_FLOAT")
     .SetShapeFn(ColorspaceShapeFn);
 
 // --------------------------------------------------------------------------
 REGISTER_OP("HSVToRGB")
     .Input("images: T")
     .Output("output: T")
-    .Attr("T: {half, bfloat16, float, double} = DT_FLOAT")
+    .Attr("T: {half, bfloat16,posit160, float, double} = DT_FLOAT")
     .SetShapeFn(ColorspaceShapeFn);
 
 // --------------------------------------------------------------------------

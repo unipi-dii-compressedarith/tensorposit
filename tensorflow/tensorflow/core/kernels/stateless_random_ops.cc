@@ -258,6 +258,7 @@ class StatelessRandomPoissonOp : public StatelessRandomOpBase {
 
 TF_CALL_half(REGISTER_CPU);
 TF_CALL_bfloat16(REGISTER_CPU);
+TF_CALL_posit160(REGISTER_CPU);
 TF_CALL_float(REGISTER_CPU);
 TF_CALL_double(REGISTER_CPU);
 TF_CALL_int32(REGISTER_INT_CPU);

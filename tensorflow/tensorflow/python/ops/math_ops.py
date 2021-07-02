@@ -1430,6 +1430,7 @@ _TRUEDIV_TABLE = {
     dtypes.uint64: dtypes.float64,
     dtypes.int64: dtypes.float64,
     dtypes.bfloat16: None,
+    dtypes.posit160: None,
     dtypes.float16: None,
     dtypes.float32: None,
     dtypes.float64: None,

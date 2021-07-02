@@ -25,6 +25,7 @@ limitations under the License.
 #include "tensorflow/core/lib/gtl/inlined_vector.h"
 #include "tensorflow/core/platform/types.h"
 #include "tensorflow/python/lib/core/bfloat16.h"
+#include "tensorflow/python/lib/core/posit160.h"
 #include "tensorflow/python/lib/core/ndarray_tensor_bridge.h"
 #include "tensorflow/python/lib/core/numpy.h"
 
@@ -179,7 +180,12 @@ Status PyArray_TYPE_to_TF_DataType(PyArrayObject* array,
       if (pyarray_type == Bfloat16NumpyType()) {
         *out_tf_datatype = TF_BFLOAT16;
         break;
-      } else if (pyarray_type == NPY_ULONGLONG) {
+      } else if (pyarray_type == Posit160NumpyType()) {
+        // NPY_ULONGLONG is equivalent to NPY_UINT64, while their enum values
+        // might be different on certain platforms.
+        *out_tf_datatype = TF_POSIT160;
+        break;
+      }else if (pyarray_type == NPY_ULONGLONG) {
         // NPY_ULONGLONG is equivalent to NPY_UINT64, while their enum values
         // might be different on certain platforms.
         *out_tf_datatype = TF_UINT64;

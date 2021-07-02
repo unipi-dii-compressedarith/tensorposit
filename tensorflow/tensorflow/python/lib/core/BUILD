@@ -337,6 +337,7 @@ cc_library(
     ]),
     deps = [
         ":bfloat16_lib",
+        ":posit160_lib",
         ":ndarray_tensor_bridge",
         ":numpy_lib",
         ":safe_ptr",
