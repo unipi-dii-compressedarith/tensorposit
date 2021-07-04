@@ -12,7 +12,7 @@
 // clang-format on
 
 namespace tensorflow {
-typedef posit::Posit<int16_t, 16 , 0, uint_fast32_t, posit::PositSpec::WithNan> posit160;
+typedef posit::Posit<int16_t, 16 , 2, uint_fast32_t, posit::PositSpec::WithNan> posit160;
 }  // end namespace tensorflow
 
 #endif

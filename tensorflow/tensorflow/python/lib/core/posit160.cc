@@ -28,8 +28,8 @@ limitations under the License.
 namespace tensorflow {
 namespace {
 
-using posit160 = posit::Posit<int16_t, 16 , 0, uint_fast32_t, posit::PositSpec::WithNan>;
-
+//using posit160 = posit::Posit<int16_t, 16 , 1, uint_fast32_t, posit::PositSpec::WithNan>;
+using posit160 = tensorflow::posit160;
 struct PyDecrefDeleter {
   void operator()(PyObject* p) const { Py_DECREF(p); }
 };
