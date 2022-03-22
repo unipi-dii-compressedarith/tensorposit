@@ -63,10 +63,17 @@ def ExtractBitsFromBFloat16(x):
   return np.asarray(
       x, dtype=dtypes.bfloat16.as_numpy_dtype).view(np.uint16).item()
 
+def ExtractBitsFromPosit16(x):
+  return np.asarray(
+      x, dtype=dtypes.posit160.as_numpy_dtype).view(np.uint16).item()
 
 def SlowAppendBFloat16ArrayToTensorProto(tensor_proto, proto_values):
   tensor_proto.half_val.extend(
       [ExtractBitsFromBFloat16(x) for x in proto_values])
+
+def SlowAppendPosit16ArrayToTensorProto(tensor_proto, proto_values):
+  tensor_proto.half_val.extend(
+      [ExtractBitsFromPosit16(x) for x in proto_values])      
 
 
 def FastAppendBFloat16ArrayToTensorProto(tensor_proto, proto_values):
@@ -160,6 +167,8 @@ else:
 
   _NP_TO_APPEND_FN = {
       dtypes.bfloat16.as_numpy_dtype: SlowAppendBFloat16ArrayToTensorProto,
+      dtypes.posit160.as_numpy_dtype: SlowAppendPosit16ArrayToTensorProto,
+
       np.float16: SlowAppendFloat16ArrayToTensorProto,
       np.float32: SlowAppendFloat32ArrayToTensorProto,
       np.float64: SlowAppendFloat64ArrayToTensorProto,

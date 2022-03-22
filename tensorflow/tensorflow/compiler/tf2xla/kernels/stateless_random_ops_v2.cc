@@ -244,7 +244,7 @@ REGISTER_XLA_OP(Name("StatelessRandomUniformV2")
                     .CompileTimeConstantInput("shape")
                     .CompileTimeConstantInput("alg")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
                 StatelessRandomUniformOp);
 
 class StatelessRandomUniformIntOp : public XlaOpKernel {
@@ -405,7 +405,7 @@ REGISTER_XLA_OP(Name("StatelessRandomNormalV2")
                     .CompileTimeConstantInput("shape")
                     .CompileTimeConstantInput("alg")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
                 StatelessRandomNormalOp);
 
 class StatelessTruncatedNormalOp : public XlaOpKernel {
@@ -459,7 +459,7 @@ REGISTER_XLA_OP(Name("StatelessTruncatedNormalV2")
                     .CompileTimeConstantInput("shape")
                     .CompileTimeConstantInput("alg")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
                 StatelessTruncatedNormalOp);
 
 class GetKeyCounterAlgOp : public XlaOpKernel {
