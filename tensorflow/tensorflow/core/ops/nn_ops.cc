@@ -1231,7 +1231,7 @@ REGISTER_OP("SparseSoftmaxCrossEntropyWithLogits")
     .Input("labels: Tlabels")
     .Output("loss: T")
     .Output("backprop: T")
-    .Attr("T: {half, bfloat16,posit160, float, double}")
+    .Attr("T: {half, bfloat16, posit160, float, double}")
     .Attr("Tlabels: {int32, int64} = DT_INT64")
     .SetShapeFn([](InferenceContext* c) {
       ShapeHandle features;

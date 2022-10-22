@@ -26,6 +26,7 @@ limitations under the License.
 #include "tensorflow/core/framework/tensor_types.h"
 #include "tensorflow/core/util/determinism.h"
 #include "tensorflow/core/util/env_var.h"
+#include "tensorflow/core/platform/posit.h"
 
 namespace tensorflow {
 
@@ -146,6 +147,8 @@ REGISTER(CPU, float, int32)
 REGISTER(CPU, float, int64)
 REGISTER(CPU, double, int32)
 REGISTER(CPU, double, int64)
+REGISTER(CPU, posit160, int32)
+REGISTER(CPU, posit160, int64)
 REGISTER(CPU, Eigen::half, int32)
 REGISTER(CPU, Eigen::half, int64)
 

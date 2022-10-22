@@ -51,6 +51,7 @@ cc_library(
     ],
     copts = tf_copts(),
     deps = [
+	"//third_party/cppposit_private:posit",
         "//tensorflow/core/platform:logging",
         "//tensorflow/core/platform:macros",
         "//tensorflow/core/platform:types",
