@@ -630,6 +630,9 @@ def MakeNdarray(tensor):
     values = np.fromiter(tensor.float_val, dtype=dtype)
   elif tensor_dtype == dtypes.float64:
     values = np.fromiter(tensor.double_val, dtype=dtype)
+  elif tensor_dtype == dtypes.posit160:
+    values = np.fromiter(tensor.half_val, dtype=np.uint16)
+    values.dtype = tensor_dtype.as_numpy_dtype
   elif tensor_dtype in [
       dtypes.int32, dtypes.uint8, dtypes.uint16, dtypes.int16, dtypes.int8,
       dtypes.qint32, dtypes.quint8, dtypes.qint8, dtypes.qint16, dtypes.quint16
