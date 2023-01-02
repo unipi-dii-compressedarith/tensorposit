@@ -794,7 +794,7 @@ REGISTER_OP("DiagPart")
     .Input("input: T")
     .Output("diagonal: T")
     .Attr(
-        "T: {bfloat16, half, float, double, int32, int64, complex64, "
+        "T: {bfloat16, half, float, posit160, double, int32, int64, complex64, "
         "complex128}")
     .SetShapeFn([](InferenceContext* c) {
       ShapeHandle in = c->input(0);

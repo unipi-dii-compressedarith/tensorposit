@@ -128,6 +128,7 @@ class CSRTransposeOp : public OpKernel {
                           CSRTransposeOp<DEV##Device, T>);
 
 REGISTER_TRANSPOSE(CPU, float)
+REGISTER_TRANSPOSE(CPU, posit160)
 REGISTER_TRANSPOSE(CPU, double)
 REGISTER_TRANSPOSE(CPU, complex64)
 REGISTER_TRANSPOSE(CPU, complex128)
