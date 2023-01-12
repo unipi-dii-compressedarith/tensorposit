@@ -9,7 +9,6 @@ from sklearn.metrics import mean_squared_error
 
 k.backend.set_floatx("posit160")
 
-
 data = pd.read_csv("iap.csv", usecols = [1], engine = "python", skipfooter = 3)
 
 data_raw = data.values.astype("float32")
@@ -39,5 +38,7 @@ classifier.add(k.layers.MaxPooling1D(pool_size=2))
 classifier.add(k.layers.Flatten())
 classifier.add(k.layers.Dense(1))
 classifier.compile(loss = "mean_squared_error", optimizer = "adam")
+history = classifier.fit(X_train, y_train, epochs = 100, batch_size = 1, verbose = 2)
+
 
 
