@@ -6233,6 +6233,7 @@ filegroup(
         "//tensorflow/core/kernels/linalg:einsum_op_impl_int64.cc",
         "//tensorflow/core/kernels/linalg:einsum_op_impl_float.cc",
         "//tensorflow/core/kernels/linalg:einsum_op_impl_double.cc",
+        "//tensorflow/core/kernels/linalg:einsum_op_impl_posit.cc",
         "//tensorflow/core/kernels/linalg:einsum_op_impl_complex64.cc",
         "//tensorflow/core/kernels/linalg:einsum_op_impl_complex128.cc",
         "//tensorflow/core/kernels/linalg:einsum_op_impl.h",

@@ -43,6 +43,7 @@ exports_files([
     "einsum_op_impl_int64.cc",
     "einsum_op_impl_float.cc",
     "einsum_op_impl_double.cc",
+    "einsum_op_impl_posit.cc",
     "einsum_op_impl_complex64.cc",
     "einsum_op_impl_complex128.cc",
     "einsum_op_impl.h",
