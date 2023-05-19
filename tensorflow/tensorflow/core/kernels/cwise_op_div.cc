@@ -24,9 +24,9 @@ REGISTER8(BinaryOp, CPU, "Div", functor::safe_div, uint8, uint16, uint32,
 REGISTER8(BinaryOp, CPU, "TruncateDiv", functor::safe_div, uint8, uint16,
           uint32, uint64, int8, int16, int32, int64);
 REGISTER7(BinaryOp, CPU, "RealDiv", functor::div, float, Eigen::half, double,
-          bfloat16,posit160, complex64, complex128);
-REGISTER5(BinaryOp, CPU, "DivNoNan", functor::div_no_nan, Eigen::half, float,
-          double, complex64, complex128);
+          bfloat16, posit160, complex64, complex128);
+REGISTER6(BinaryOp, CPU, "DivNoNan", functor::div_no_nan, Eigen::half, float,
+          posit160, double, complex64, complex128);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)

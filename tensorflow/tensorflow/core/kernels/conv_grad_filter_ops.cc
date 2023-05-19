@@ -642,6 +642,7 @@ class Conv2DCustomBackpropFilterOp : public OpKernel {
 TF_CALL_half(REGISTER_CPU_KERNELS);
 TF_CALL_float(REGISTER_CPU_KERNELS);
 TF_CALL_double(REGISTER_CPU_KERNELS);
+TF_CALL_posit160(REGISTER_CPU_KERNELS);
 #undef REGISTER_CPU_KERNELS
 
 // To be used inside depthwise_conv_grad_op.cc.
