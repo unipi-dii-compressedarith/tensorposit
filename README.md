@@ -49,7 +49,7 @@ import tensorflow as tf
 from tensorflow.python import keras
 
 # Set default floatx
-keras.backend.set_floatx("posit160")
+keras.backend.set_floatx("posit16e2")
 
 # Or create a tensor of posits
 tp16e2 = tf.ones((10,10), dtype=tf.posit16e2)
