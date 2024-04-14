@@ -19,7 +19,9 @@ namespace tensorflow {
 REGISTER9(BinaryOp, CPU, "GreaterEqual", functor::greater_equal, float,
           Eigen::half, double, int32, int64, uint8, uint16, uint32, uint64);
 REGISTER4(BinaryOp, CPU, "GreaterEqual", functor::greater_equal, int8, int16,
-          bfloat16, posit160);
+          bfloat16, posit16e2);
+REGISTER2(BinaryOp, CPU, "GreaterEqual",functor::greater_equal, posit32e2, posit8e2);
+
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)
 REGISTER9(BinaryOp, GPU, "GreaterEqual", functor::greater_equal, float,

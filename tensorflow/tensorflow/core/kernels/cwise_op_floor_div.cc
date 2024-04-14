@@ -20,7 +20,8 @@ namespace tensorflow {
 REGISTER8(BinaryOp, CPU, "FloorDiv", functor::safe_floor_div, uint8, uint16,
           uint32, uint64, int8, int16, int32, int64);
 REGISTER5(BinaryOp, CPU, "FloorDiv", functor::floor_div_real, float,
-          Eigen::half, bfloat16,posit160, double);
+          Eigen::half, bfloat16,posit16e2, double);
+REGISTER2(BinaryOp, CPU, "FloorDiv",functor::floor_div_real, posit32e2, posit8e2);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 REGISTER4(BinaryOp, GPU, "FloorDiv", functor::floor_div, uint8, uint16, int16,

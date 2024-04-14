@@ -70,8 +70,18 @@ struct UniqueOpHashMap<bfloat16, TIndex> {
 };
 
 template <typename TIndex>
-struct UniqueOpHashMap<posit160, TIndex> {
-  using map_type = std::unordered_map<posit160, TIndex>;
+struct UniqueOpHashMap<posit16e2, TIndex> {
+  using map_type = std::unordered_map<posit16e2, TIndex>;
+};
+
+template <typename TIndex>
+struct UniqueOpHashMap<posit32e2, TIndex> {
+  using map_type = std::unordered_map<posit32e2, TIndex>;
+};
+
+template <typename TIndex>
+struct UniqueOpHashMap<posit8e2, TIndex> {
+  using map_type = std::unordered_map<posit8e2, TIndex>;
 };
 
 // `UniqueOp` computes the unique elements in the input tensor.

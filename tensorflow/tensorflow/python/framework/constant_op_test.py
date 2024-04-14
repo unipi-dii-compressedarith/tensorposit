@@ -36,7 +36,7 @@ from tensorflow.python.platform import test
 class ConstantOpTest(test.TestCase, parameterized.TestCase):
 
   @parameterized.parameters(
-      dtypes.posit160
+      dtypes.posit16e2, dtypes.posit8e2, dtypes.posit32e2,
       dtypes.bfloat16,
       dtypes.complex128,
       dtypes.complex64,

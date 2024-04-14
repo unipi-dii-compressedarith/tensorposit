@@ -535,7 +535,7 @@ REGISTER_OP("Qr")
     .Output("q: T")
     .Output("r: T")
     .Attr("full_matrices: bool = False")
-    .Attr("T: {double, float, half, posit160, complex64, complex128}")
+    .Attr("T: {double, float, half, posit16e2, posit32e2, posit8e2, complex64, complex128}")
     .SetShapeFn(QrShapeFn);
 
 REGISTER_OP("Svd")

@@ -103,7 +103,7 @@ def set_floatx(value):
       ValueError: In case of invalid value.
   """
   global _FLOATX
-  if value not in {'float16', 'float32', 'float64','posit160'}:
+  if value not in {'float16', 'float32', 'float64','posit16e2', 'posit8e2', 'posit32e2' }:
     raise ValueError('Unknown floatx type: ' + str(value))
   _FLOATX = str(value)
 

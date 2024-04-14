@@ -19,8 +19,10 @@ namespace tensorflow {
 
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER7(UnaryOp, CPU, "Rsqrt", functor::rsqrt, float, Eigen::half, bfloat16,posit160,
+REGISTER7(UnaryOp, CPU, "Rsqrt", functor::rsqrt, float, Eigen::half, bfloat16,posit16e2,
           double, complex64, complex128);
+REGISTER2(UnaryOp, CPU, "Rsqrt",functor::rsqrt, posit32e2, posit8e2);
+
 #else
 REGISTER3(UnaryOp, CPU, "Rsqrt", functor::rsqrt, bfloat16, complex64,
           complex128);

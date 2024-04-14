@@ -33,7 +33,9 @@ namespace random {
 PHILOX_DEVICE_INLINE Eigen::half Uint16ToHalf(uint16 x);
 // Helper function to convert a 16-bit integer to a bfloat16 between [0..1).
 PHILOX_DEVICE_INLINE bfloat16 Uint16ToGfloat16(uint16 x);
-PHILOX_DEVICE_INLINE posit160 Uint16ToPosit160(uint16 x);
+PHILOX_DEVICE_INLINE posit16e2 Uint16ToPosit16e2(uint16 x);
+PHILOX_DEVICE_INLINE posit32e2 Uint16ToPosit32e2(uint16 x);
+PHILOX_DEVICE_INLINE posit8e2 Uint16ToPosit8e2(uint16 x);
 
 // Helper function to convert a 32-bit integer to a float between [0..1).
 PHILOX_DEVICE_INLINE float Uint32ToFloat(uint32 x);
@@ -117,7 +119,7 @@ class UniformDistribution<Generator, bfloat16> {
 };
 
 template <class Generator>
-class UniformDistribution<Generator, posit160> {
+class UniformDistribution<Generator, posit8e2> {
  public:
   // The number of elements that will be returned.
   static constexpr int kResultElementCount = Generator::kResultElementCount;
@@ -126,15 +128,63 @@ class UniformDistribution<Generator, posit160> {
   // Indicate that this distribution may take variable number of samples
   // during the runtime.
   static constexpr bool kVariableSamplesPerOutput = false;
-  typedef Array<posit160, kResultElementCount> ResultType;
-  typedef posit160 ResultElementType;
+  typedef Array<posit8e2, kResultElementCount> ResultType;
+  typedef posit8e2 ResultElementType;
 
   PHILOX_DEVICE_INLINE
   ResultType operator()(Generator* gen) {
     typename Generator::ResultType sample = (*gen)();
     ResultType result;
     for (int i = 0; i < kResultElementCount; ++i) {
-      result[i] = Uint16ToPosit160(sample[i]);
+      result[i] = Uint16ToPosit8e2(sample[i]);
+    }
+    return result;
+  }
+};
+
+template <class Generator>
+class UniformDistribution<Generator, posit16e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount = Generator::kResultElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 3;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = false;
+  typedef Array<posit16e2, kResultElementCount> ResultType;
+  typedef posit16e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(Generator* gen) {
+    typename Generator::ResultType sample = (*gen)();
+    ResultType result;
+    for (int i = 0; i < kResultElementCount; ++i) {
+      result[i] = Uint16ToPosit16e2(sample[i]);
+    }
+    return result;
+  }
+};
+
+template <class Generator>
+class UniformDistribution<Generator, posit32e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount = Generator::kResultElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 3;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = false;
+  typedef Array<posit32e2, kResultElementCount> ResultType;
+  typedef posit32e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(Generator* gen) {
+    typename Generator::ResultType sample = (*gen)();
+    ResultType result;
+    for (int i = 0; i < kResultElementCount; ++i) {
+      result[i] = Uint16ToPosit32e2(sample[i]);
     }
     return result;
   }
@@ -470,7 +520,7 @@ class NormalDistribution<Generator, bfloat16> {
 };
 
 template <class Generator>
-class NormalDistribution<Generator, posit160> {
+class NormalDistribution<Generator, posit8e2> {
  public:
   // The number of elements that will be returned.
   static constexpr int kResultElementCount = Generator::kResultElementCount;
@@ -479,8 +529,8 @@ class NormalDistribution<Generator, posit160> {
   // Indicate that this distribution may take variable number of samples
   // during the runtime.
   static constexpr bool kVariableSamplesPerOutput = false;
-  typedef Array<posit160, kResultElementCount> ResultType;
-  typedef posit160 ResultElementType;
+  typedef Array<posit8e2, kResultElementCount> ResultType;
+  typedef posit8e2 ResultElementType;
 
   PHILOX_DEVICE_INLINE
   ResultType operator()(Generator* gen) {
@@ -492,8 +542,68 @@ class NormalDistribution<Generator, posit160> {
       float f[2];
       // Box-Muller transform requires processing 2 elements at a time.
       BoxMullerFloat(sample[i], sample[i + 1], &f[0], &f[1]);
-      result[i] = posit160(f[0]);
-      result[i + 1] = posit160(f[1]);
+      result[i] = posit8e2(f[0]);
+      result[i + 1] = posit8e2(f[1]);
+    }
+    return result;
+  }
+};
+
+template <class Generator>
+class NormalDistribution<Generator, posit16e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount = Generator::kResultElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 70;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = false;
+  typedef Array<posit16e2, kResultElementCount> ResultType;
+  typedef posit16e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(Generator* gen) {
+    typename Generator::ResultType sample = (*gen)();
+    ResultType result;
+    static_assert(kResultElementCount % 2 == 0,
+                  "kResultElementCount should be an even number");
+    for (int i = 0; i < kResultElementCount; i += 2) {
+      float f[2];
+      // Box-Muller transform requires processing 2 elements at a time.
+      BoxMullerFloat(sample[i], sample[i + 1], &f[0], &f[1]);
+      result[i] = posit16e2(f[0]);
+      result[i + 1] = posit16e2(f[1]);
+    }
+    return result;
+  }
+};
+
+template <class Generator>
+class NormalDistribution<Generator, posit32e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount = Generator::kResultElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 70;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = false;
+  typedef Array<posit32e2, kResultElementCount> ResultType;
+  typedef posit32e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(Generator* gen) {
+    typename Generator::ResultType sample = (*gen)();
+    ResultType result;
+    static_assert(kResultElementCount % 2 == 0,
+                  "kResultElementCount should be an even number");
+    for (int i = 0; i < kResultElementCount; i += 2) {
+      float f[2];
+      // Box-Muller transform requires processing 2 elements at a time.
+      BoxMullerFloat(sample[i], sample[i + 1], &f[0], &f[1]);
+      result[i] = posit32e2(f[0]);
+      result[i + 1] = posit32e2(f[1]);
     }
     return result;
   }
@@ -659,7 +769,7 @@ class TruncatedNormalDistribution<SingleSampleGenerator, bfloat16> {
 };
 
 template <class SingleSampleGenerator>
-class TruncatedNormalDistribution<SingleSampleGenerator, posit160> {
+class TruncatedNormalDistribution<SingleSampleGenerator, posit32e2> {
  public:
   // The number of elements that will be returned.
   static constexpr int kResultElementCount =
@@ -672,8 +782,8 @@ class TruncatedNormalDistribution<SingleSampleGenerator, posit160> {
   // The threshold where the normal distribution is truncated.
   const float kTruncateValue = 2.0f;
 
-  typedef Array<posit160, kResultElementCount> ResultType;
-  typedef posit160 ResultElementType;
+  typedef Array<posit32e2, kResultElementCount> ResultType;
+  typedef posit32e2 ResultElementType;
 
   PHILOX_DEVICE_INLINE
   ResultType operator()(SingleSampleGenerator* gen) {
@@ -689,13 +799,105 @@ class TruncatedNormalDistribution<SingleSampleGenerator, posit160> {
       BoxMullerFloat(x0, x1, &f[0], &f[1]);
 
       if (Eigen::numext::abs(f[0]) < kTruncateValue) {
-        results[index++] = posit160(f[0]);
+        results[index++] = posit32e2(f[0]);
         if (index >= kResultElementCount) {
           return results;
         }
       }
       if (Eigen::numext::abs(f[1]) < kTruncateValue) {
-        results[index++] = posit160(f[1]);
+        results[index++] = posit32e2(f[1]);
+        if (index >= kResultElementCount) {
+          return results;
+        }
+      }
+    }
+  }
+};
+
+template <class SingleSampleGenerator>
+class TruncatedNormalDistribution<SingleSampleGenerator, posit16e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount =
+      SingleSampleGenerator::kNativeElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 90;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = true;
+  // The threshold where the normal distribution is truncated.
+  const float kTruncateValue = 2.0f;
+
+  typedef Array<posit16e2, kResultElementCount> ResultType;
+  typedef posit16e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(SingleSampleGenerator* gen) {
+    ResultType results;
+    int index = 0;
+    while (true) {
+      // Repeatedly take samples from the normal distribution, until we have
+      // the desired number of elements that fall within the pre-defined cutoff
+      // threshold.
+      const uint32 x0 = (*gen)();
+      const uint32 x1 = (*gen)();
+      float f[2];
+      BoxMullerFloat(x0, x1, &f[0], &f[1]);
+
+      if (Eigen::numext::abs(f[0]) < kTruncateValue) {
+        results[index++] = posit16e2(f[0]);
+        if (index >= kResultElementCount) {
+          return results;
+        }
+      }
+      if (Eigen::numext::abs(f[1]) < kTruncateValue) {
+        results[index++] = posit16e2(f[1]);
+        if (index >= kResultElementCount) {
+          return results;
+        }
+      }
+    }
+  }
+};
+
+template <class SingleSampleGenerator>
+class TruncatedNormalDistribution<SingleSampleGenerator, posit8e2> {
+ public:
+  // The number of elements that will be returned.
+  static constexpr int kResultElementCount =
+      SingleSampleGenerator::kNativeElementCount;
+  // Cost of generation of a single element (in cycles).
+  static constexpr int kElementCost = 90;
+  // Indicate that this distribution may take variable number of samples
+  // during the runtime.
+  static constexpr bool kVariableSamplesPerOutput = true;
+  // The threshold where the normal distribution is truncated.
+  const float kTruncateValue = 2.0f;
+
+  typedef Array<posit8e2, kResultElementCount> ResultType;
+  typedef posit8e2 ResultElementType;
+
+  PHILOX_DEVICE_INLINE
+  ResultType operator()(SingleSampleGenerator* gen) {
+    ResultType results;
+    int index = 0;
+    while (true) {
+      // Repeatedly take samples from the normal distribution, until we have
+      // the desired number of elements that fall within the pre-defined cutoff
+      // threshold.
+      const uint32 x0 = (*gen)();
+      const uint32 x1 = (*gen)();
+      float f[2];
+      BoxMullerFloat(x0, x1, &f[0], &f[1]);
+
+      if (Eigen::numext::abs(f[0]) < kTruncateValue) {
+        results[index++] = posit8e2(f[0]);
+        if (index >= kResultElementCount) {
+          return results;
+        }
+      }
+      if (Eigen::numext::abs(f[1]) < kTruncateValue) {
+        results[index++] = posit8e2(f[1]);
         if (index >= kResultElementCount) {
           return results;
         }
@@ -907,9 +1109,19 @@ PHILOX_DEVICE_INLINE float Uint32ToFloat(uint32 x) {
 
 // Helper function to convert an 16-bit integer to a bfloat16 between [0..1).
 // This can create a uniform distribution of values between [0..1).
-PHILOX_DEVICE_INLINE posit160 Uint16ToPosit160(uint16 x) {
+PHILOX_DEVICE_INLINE posit16e2 Uint16ToPosit16e2(uint16 x) {
   float tmp = Uint32ToFloat((uint32)x);
-  return posit160(tmp);
+  return posit16e2(tmp);
+}
+
+PHILOX_DEVICE_INLINE posit8e2 Uint16ToPosit8e2(uint16 x) {
+  float tmp = Uint32ToFloat((uint32)x);
+  return posit8e2(tmp);
+}
+
+PHILOX_DEVICE_INLINE posit32e2 Uint16ToPosit32e2(uint16 x) {
+  float tmp = Uint32ToFloat((uint32)x);
+  return posit32e2(tmp);
 }
 
 // Helper function to convert two 32-bit integers to a double between [0..1).

@@ -17,14 +17,19 @@ limitations under the License.
 
 namespace tensorflow {
 REGISTER7(BinaryOp, CPU, "Add", functor::add, float, Eigen::half, double, int32,
-          int64, bfloat16, posit160);
+          int64, bfloat16, posit16e2);
+REGISTER2(BinaryOp, CPU, "Add",functor::add, posit32e2, posit8e2);
 
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
 REGISTER7(BinaryOp, CPU, "AddV2", functor::add, float, Eigen::half, double,
-          int32, int64, bfloat16, posit160);
+          int32, int64, bfloat16, posit16e2);
+REGISTER2(BinaryOp, CPU, "AddV2",functor::add, posit32e2, posit8e2);
+
 #else
-REGISTER2(BinaryOp, CPU, "AddV2", functor::add, bfloat16, posit160);
+REGISTER2(BinaryOp, CPU, "AddV2", functor::add, bfloat16, posit16e2);
+REGISTER2(BinaryOp, CPU, "AddV2",functor::add, posit32e2, posit8e2);
+
 #endif
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM

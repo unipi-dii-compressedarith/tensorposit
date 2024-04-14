@@ -312,7 +312,9 @@ py_library(
         "//tensorflow/core:protos_all_py",
         "//tensorflow/python:pywrap_tensorflow",
         "//tensorflow/python/lib/core:_pywrap_bfloat16",
-        "//tensorflow/python/lib/core:_pywrap_posit160",
+        "//tensorflow/python/lib/core:_pywrap_posit8e2",
+        "//tensorflow/python/lib/core:_pywrap_posit16e2",
+        "//tensorflow/python/lib/core:_pywrap_posit32e2",
         "//tensorflow/python/types:doc_typealias",
     ],
 )

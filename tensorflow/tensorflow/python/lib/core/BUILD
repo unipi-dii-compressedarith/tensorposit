@@ -60,9 +60,9 @@ cc_library(
 )
 
 cc_library(
-    name = "posit160_lib",
-    srcs = ["posit160.cc"],
-    hdrs = ["posit160.h"],
+    name = "posit16e2_lib",
+    srcs = ["posit16e2.cc"],
+    hdrs = ["posit16e2.h"],
     deps = [
         ":numpy_lib",
         "//tensorflow/core/platform:logging",
@@ -71,6 +71,34 @@ cc_library(
         "@com_google_absl//absl/strings",
     ],
 )
+
+cc_library(
+    name = "posit32e2_lib",
+    srcs = ["posit32e2.cc"],
+    hdrs = ["posit32e2.h"],
+    deps = [
+        ":numpy_lib",
+        "//tensorflow/core/platform:logging",
+        "//third_party/cppposit_private:posit",
+        "//third_party/python_runtime:headers",
+        "@com_google_absl//absl/strings",
+    ],
+)
+
+
+cc_library(
+    name = "posit8e2_lib",
+    srcs = ["posit8e2.cc"],
+    hdrs = ["posit8e2.h"],
+    deps = [
+        ":numpy_lib",
+        "//tensorflow/core/platform:logging",
+        "//third_party/cppposit_private:posit",
+        "//third_party/python_runtime:headers",
+        "@com_google_absl//absl/strings",
+    ],
+)
+
 
 tf_python_pybind_extension(
     name = "_pywrap_bfloat16",
@@ -84,10 +112,34 @@ tf_python_pybind_extension(
 )
 
 tf_python_pybind_extension(
-    name = "_pywrap_posit160",
-    srcs = ["posit160_wrapper.cc"],
-    hdrs = ["posit160.h"],
-    module_name = "_pywrap_posit160",
+    name = "_pywrap_posit8e2",
+    srcs = ["posit8e2_wrapper.cc"],
+    hdrs = ["posit8e2.h"],
+    module_name = "_pywrap_posit",
+    deps = [
+        "//third_party/python_runtime:headers",
+        "//third_party/cppposit_private:posit",
+        "@pybind11",
+    ],
+)
+
+tf_python_pybind_extension(
+    name = "_pywrap_posit16e2",
+    srcs = ["posit16e2_wrapper.cc"],
+    hdrs = ["posit16e2.h"],
+    module_name = "_pywrap_posit",
+    deps = [
+        "//third_party/python_runtime:headers",
+        "//third_party/cppposit_private:posit",
+        "@pybind11",
+    ],
+)
+
+tf_python_pybind_extension(
+    name = "_pywrap_posit32e2",
+    srcs = ["posit32e2_wrapper.cc"],
+    hdrs = ["posit32e2.h"],
+    module_name = "_pywrap_posit",
     deps = [
         "//third_party/python_runtime:headers",
         "//third_party/cppposit_private:posit",
@@ -106,7 +158,9 @@ cc_library(
     ),
     deps = [
         ":bfloat16_lib",
-        ":posit160_lib",
+        ":posit16e2_lib",
+        ":posit32e2_lib",
+        ":posit8e2_lib",
         ":numpy_lib",
         "//tensorflow/c:c_api_no_xla",
         "//tensorflow/core:lib",
@@ -337,7 +391,9 @@ cc_library(
     ]),
     deps = [
         ":bfloat16_lib",
-        ":posit160_lib",
+        ":posit16e2_lib",
+        ":posit32e2_lib",
+        ":posit8e2_lib",
         ":ndarray_tensor_bridge",
         ":numpy_lib",
         ":safe_ptr",

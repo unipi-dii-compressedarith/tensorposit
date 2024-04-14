@@ -23,7 +23,10 @@ namespace tensorflow {
       EinsumOp<D##Device, TYPE>);
 
 #define REGISTER_CPU(TYPE) REGISTER_EINSUM(CPU, TYPE)
-TF_CALL_posit160(REGISTER_CPU);
+TF_CALL_posit8e2(REGISTER_CPU);
+TF_CALL_posit16e2(REGISTER_CPU);
+TF_CALL_posit32e2(REGISTER_CPU);
+
 #undef REGISTER_CPU
 
 #undef REGISTER_EINSUM

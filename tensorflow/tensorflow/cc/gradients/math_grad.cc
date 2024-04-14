@@ -1180,7 +1180,7 @@ REGISTER_GRADIENT_OP("Cumsum", CumsumGrad);
 
 bool IsFloatingPointDtype(DataType dtype) {
   static constexpr DataType valid_dtypes[] = {
-      DT_FLOAT, DT_HALF, DT_DOUBLE, DT_BFLOAT16, DT_COMPLEX64, DT_COMPLEX128, DT_POSIT160};
+      DT_FLOAT, DT_HALF, DT_DOUBLE, DT_BFLOAT16, DT_COMPLEX64, DT_COMPLEX128, DT_POSIT162, DT_POSIT82, DT_POSIT322};
   return std::find(std::begin(valid_dtypes), std::end(valid_dtypes), dtype) !=
          std::end(valid_dtypes);
 }

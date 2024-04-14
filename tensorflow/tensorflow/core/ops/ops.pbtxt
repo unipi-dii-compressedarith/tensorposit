@@ -31,7 +31,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -77,8 +79,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -126,8 +129,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -193,8 +197,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -220,8 +225,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -251,8 +257,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
-        type: DT_POSIT160        
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322        
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -282,7 +289,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -370,7 +379,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -441,7 +452,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -703,7 +716,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -991,7 +1006,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1063,7 +1080,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1122,7 +1141,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1205,7 +1226,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1268,7 +1291,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1359,7 +1384,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1437,7 +1464,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1518,7 +1547,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1594,7 +1625,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1681,7 +1714,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1742,7 +1777,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1805,7 +1842,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1883,7 +1922,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -1950,7 +1991,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2012,7 +2055,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2088,7 +2133,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2136,7 +2183,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2185,7 +2234,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2253,7 +2304,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2313,7 +2366,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -2377,7 +2432,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -2407,7 +2464,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -2565,7 +2624,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2631,7 +2692,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -2696,7 +2759,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -2730,7 +2795,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -2754,7 +2821,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -2947,7 +3016,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -3006,7 +3077,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -3069,7 +3142,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -3132,7 +3207,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -3737,7 +3814,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -3783,7 +3862,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -3830,7 +3911,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -3850,7 +3933,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -3870,7 +3955,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4206,7 +4293,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -4287,7 +4376,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -4522,7 +4613,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4546,7 +4639,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4570,7 +4665,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4594,7 +4691,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4618,7 +4717,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4642,7 +4743,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4666,7 +4769,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4690,7 +4795,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4714,7 +4821,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4738,7 +4847,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4762,7 +4873,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4786,7 +4899,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -4854,7 +4969,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -4904,7 +5021,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -4958,7 +5077,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -5015,7 +5136,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -5043,7 +5166,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -7301,7 +7426,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -7325,7 +7452,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -7354,7 +7483,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -7544,7 +7675,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -7943,7 +8076,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -7969,7 +8104,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_HALF
         type: DT_DOUBLE
@@ -8074,7 +8211,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_HALF
         type: DT_DOUBLE
@@ -8520,7 +8659,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -8717,7 +8858,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -8805,7 +8948,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -8892,7 +9037,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -8976,7 +9123,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -9113,7 +9262,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -9250,7 +9401,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -9390,7 +9543,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -9416,7 +9571,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -9686,7 +9843,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -9716,7 +9875,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_INT32
         type: DT_UINT32
@@ -11158,7 +11319,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -11226,7 +11389,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -11661,7 +11826,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -12273,7 +12440,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -12393,7 +12562,9 @@ op {
         type: DT_COMPLEX128
         type: DT_BOOL
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -12863,7 +13034,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -12943,7 +13116,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -13023,7 +13198,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -13146,7 +13323,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -13285,7 +13464,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -13313,7 +13494,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -13341,7 +13524,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -13376,7 +13561,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -13438,7 +13625,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -13500,7 +13689,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -13592,7 +13783,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -13937,7 +14130,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -13965,7 +14160,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -14650,7 +14847,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -14674,7 +14873,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -14698,7 +14899,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -14744,7 +14947,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -14798,7 +15003,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -16123,7 +16330,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -16147,7 +16356,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -16285,7 +16496,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -16373,7 +16586,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -17286,7 +17501,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -17314,7 +17531,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -17360,7 +17579,9 @@ op {
         type: DT_UINT32
         type: DT_UINT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -17656,7 +17877,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -17680,7 +17903,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -17902,7 +18127,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -17997,7 +18224,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -18090,7 +18319,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -18192,7 +18423,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -18826,7 +19059,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -18862,7 +19097,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -19045,7 +19282,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -19201,7 +19440,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -19567,7 +19808,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -19620,7 +19863,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20338,7 +20583,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20372,7 +20619,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20473,7 +20722,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20497,7 +20748,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20521,7 +20774,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -20573,7 +20828,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -20591,7 +20848,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -20880,7 +21139,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -20982,7 +21243,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -21044,7 +21307,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -21299,7 +21564,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -21337,7 +21604,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -21517,7 +21786,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -21553,7 +21824,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -21578,7 +21851,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -21610,7 +21885,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -22763,7 +23040,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -22789,7 +23068,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -22844,7 +23125,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -23823,7 +24106,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -24420,7 +24705,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -24494,7 +24781,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -24605,7 +24894,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -24674,7 +24965,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -24689,7 +24982,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
       }
     }
@@ -24761,7 +25056,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -24848,7 +25145,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -24923,7 +25222,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -24994,7 +25295,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25073,7 +25376,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25147,7 +25452,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25226,7 +25533,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25263,7 +25572,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -25370,7 +25681,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25399,7 +25712,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -25453,7 +25768,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -25616,7 +25933,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -25663,7 +25982,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -25812,7 +26133,9 @@ op {
         type: DT_HALF
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -25883,7 +26206,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -25922,7 +26247,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -26101,7 +26428,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -26589,7 +26918,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -26636,7 +26967,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -27122,7 +27455,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -27233,7 +27568,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -28651,7 +28988,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -30015,7 +30354,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_HALF
         type: DT_DOUBLE
@@ -30379,7 +30720,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -30539,7 +30882,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -30596,7 +30941,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -30673,7 +31020,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -30740,7 +31089,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -30811,7 +31162,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -35042,7 +35395,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -35389,7 +35744,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -36110,7 +36467,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -36159,7 +36518,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -36258,7 +36619,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -36604,7 +36967,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -36703,7 +37068,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -36737,7 +37104,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -37196,7 +37565,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -37229,7 +37600,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -37265,7 +37638,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -37301,7 +37676,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -37637,7 +38014,9 @@ op {
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -37678,7 +38057,9 @@ op {
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -37762,12 +38143,16 @@ op {
         type: DT_INT32
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -37807,7 +38192,9 @@ op {
       list {
         type: DT_FLOAT
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_DOUBLE
       }
@@ -37857,7 +38244,9 @@ op {
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -37902,7 +38291,9 @@ op {
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -37952,7 +38343,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38018,7 +38411,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38084,7 +38479,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38149,7 +38546,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38202,7 +38601,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38278,7 +38679,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38335,7 +38738,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38419,7 +38824,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38507,7 +38914,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38572,7 +38981,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38645,7 +39056,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38714,7 +39127,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38794,7 +39209,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38850,7 +39267,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38907,7 +39326,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -38971,7 +39392,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39043,7 +39466,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39104,7 +39529,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39161,7 +39588,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39230,7 +39659,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39271,7 +39702,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39444,7 +39877,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39496,7 +39931,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39548,7 +39985,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39600,7 +40039,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39652,7 +40093,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39889,7 +40332,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -39991,7 +40436,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40058,7 +40505,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40148,7 +40597,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40219,7 +40670,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40313,7 +40766,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40396,7 +40851,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40490,7 +40947,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40568,7 +41027,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40646,7 +41107,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40728,7 +41191,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40799,7 +41264,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -40882,7 +41349,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -42086,7 +42555,9 @@ op {
         type: DT_INT64
         type: DT_BOOL
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42182,7 +42653,9 @@ op {
         type: DT_UINT64
         type: DT_BOOL
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42240,7 +42713,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42264,7 +42739,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42292,7 +42769,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42337,7 +42816,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42379,7 +42860,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42473,7 +42956,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42497,7 +42982,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42576,7 +43063,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42589,7 +43078,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42617,7 +43108,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42670,7 +43163,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42698,7 +43193,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42740,7 +43237,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42764,7 +43263,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42812,7 +43313,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42923,7 +43426,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -42947,7 +43452,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43016,7 +43523,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43044,7 +43553,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43072,7 +43583,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43096,7 +43609,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43128,7 +43643,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43200,7 +43717,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43228,7 +43747,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43344,7 +43865,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43372,7 +43895,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43400,7 +43925,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43454,7 +43981,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43486,7 +44015,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43520,7 +44051,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43557,7 +44090,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43589,7 +44124,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43640,7 +44177,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43702,7 +44241,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43776,7 +44317,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43818,7 +44361,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43961,7 +44506,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -43991,7 +44538,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -44021,7 +44570,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -44387,7 +44938,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -44430,7 +44983,9 @@ op {
         type: DT_INT32
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -44595,7 +45150,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -44659,7 +45216,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -44713,7 +45272,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -44766,7 +45327,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_INT32
@@ -44829,7 +45392,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -44926,7 +45491,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -44990,7 +45557,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45054,7 +45623,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45116,7 +45687,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45174,7 +45747,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45280,7 +45855,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45647,7 +46224,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -45697,7 +46276,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45744,7 +46325,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -45794,7 +46377,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45845,7 +46430,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -45989,7 +46576,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -46017,7 +46606,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -46648,7 +47239,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -46678,7 +47271,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -46704,7 +47299,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -46734,7 +47331,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -46760,7 +47359,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -47262,7 +47863,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47294,7 +47897,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47318,7 +47923,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47346,7 +47953,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47370,7 +47979,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47398,7 +48009,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -47567,7 +48180,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -47621,7 +48236,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -47690,7 +48307,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -47712,7 +48331,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -47764,7 +48385,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -47833,7 +48456,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -47906,7 +48531,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48003,7 +48630,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48080,7 +48709,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48182,7 +48813,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48272,7 +48905,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48373,7 +49008,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48457,7 +49094,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48545,7 +49184,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48621,7 +49262,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48711,7 +49354,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -48862,7 +49507,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -49247,7 +49894,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -49296,7 +49945,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -49345,7 +49996,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -49469,7 +50122,9 @@ op {
       list {
         type: DT_FLOAT
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -49483,7 +50138,9 @@ op {
       list {
         type: DT_FLOAT
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -49848,7 +50505,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -49907,7 +50566,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -49962,7 +50623,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -50026,7 +50689,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -50110,7 +50775,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50172,7 +50839,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50234,7 +50903,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50305,7 +50976,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50367,7 +51040,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50429,7 +51104,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50507,7 +51184,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -50570,7 +51249,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -50639,7 +51320,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -50765,7 +51448,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -50829,7 +51514,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -50896,7 +51583,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -50956,7 +51645,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -51049,7 +51740,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -51303,7 +51996,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -51428,7 +52123,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -51458,7 +52155,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -51484,7 +52183,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -51518,7 +52219,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -52316,7 +53019,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -52640,7 +53345,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -52705,7 +53412,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -52817,7 +53526,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -53103,7 +53814,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -53235,7 +53948,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -53300,7 +54015,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -54060,7 +54777,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -54158,7 +54877,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -54922,7 +55643,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -54952,7 +55675,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -54982,7 +55707,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -57311,7 +58038,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -57381,7 +58110,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -57537,7 +58268,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -57577,7 +58310,9 @@ op {
         type: DT_INT32
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE
@@ -57616,7 +58351,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }
@@ -58396,7 +59133,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -58459,7 +59198,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -58526,7 +59267,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -58594,7 +59337,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -58881,7 +59626,9 @@ op {
         type: DT_QUINT8
         type: DT_QINT32
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_COMPLEX128
         type: DT_HALF
@@ -59134,7 +59881,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -59240,7 +59989,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32

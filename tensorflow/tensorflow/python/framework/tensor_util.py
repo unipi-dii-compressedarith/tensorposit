@@ -63,17 +63,35 @@ def ExtractBitsFromBFloat16(x):
   return np.asarray(
       x, dtype=dtypes.bfloat16.as_numpy_dtype).view(np.uint16).item()
 
-def ExtractBitsFromPosit16(x):
+def ExtractBitsFromPosit16e2(x):
   return np.asarray(
-      x, dtype=dtypes.posit160.as_numpy_dtype).view(np.uint16).item()
+      x, dtype=dtypes.posit16e2.as_numpy_dtype).view(np.uint16).item()
+
+def ExtractBitsFromPosit32e2(x):
+  return np.asarray(
+      x, dtype=dtypes.posit32e2.as_numpy_dtype).view(np.uint32).item()
+
+def ExtractBitsFromPosit8e2(x):
+  return np.asarray(
+      x, dtype=dtypes.posit8e2.as_numpy_dtype).view(np.uint8).item()
+
 
 def SlowAppendBFloat16ArrayToTensorProto(tensor_proto, proto_values):
   tensor_proto.half_val.extend(
       [ExtractBitsFromBFloat16(x) for x in proto_values])
 
-def SlowAppendPosit16ArrayToTensorProto(tensor_proto, proto_values):
+def SlowAppendPosit16e2ArrayToTensorProto(tensor_proto, proto_values):
   tensor_proto.half_val.extend(
-      [ExtractBitsFromPosit16(x) for x in proto_values])      
+      [ExtractBitsFromPosit16e2(x) for x in proto_values])      
+
+def SlowAppendPosit8e2ArrayToTensorProto(tensor_proto, proto_values):
+  tensor_proto.half_val.extend(
+      [ExtractBitsFromPosit8e2(x) for x in proto_values])      
+
+def SlowAppendPosit32e2ArrayToTensorProto(tensor_proto, proto_values):
+  tensor_proto.half_val.extend(
+      [ExtractBitsFromPosit32e2(x) for x in proto_values])      
+
 
 
 def FastAppendBFloat16ArrayToTensorProto(tensor_proto, proto_values):
@@ -167,7 +185,9 @@ else:
 
   _NP_TO_APPEND_FN = {
       dtypes.bfloat16.as_numpy_dtype: SlowAppendBFloat16ArrayToTensorProto,
-      dtypes.posit160.as_numpy_dtype: SlowAppendPosit16ArrayToTensorProto,
+      dtypes.posit16e2.as_numpy_dtype: SlowAppendPosit16e2ArrayToTensorProto,
+      dtypes.posit32e2.as_numpy_dtype: SlowAppendPosit8e2ArrayToTensorProto,
+      dtypes.posit8e2.as_numpy_dtype: SlowAppendPosit32e2ArrayToTensorProto,
 
       np.float16: SlowAppendFloat16ArrayToTensorProto,
       np.float32: SlowAppendFloat32ArrayToTensorProto,
@@ -630,8 +650,14 @@ def MakeNdarray(tensor):
     values = np.fromiter(tensor.float_val, dtype=dtype)
   elif tensor_dtype == dtypes.float64:
     values = np.fromiter(tensor.double_val, dtype=dtype)
-  elif tensor_dtype == dtypes.posit160:
+  elif tensor_dtype == dtypes.posit16e2:
     values = np.fromiter(tensor.half_val, dtype=np.uint16)
+    values.dtype = tensor_dtype.as_numpy_dtype
+  elif tensor_dtype == dtypes.posit32e2:
+    values = np.fromiter(tensor.float_val, dtype=np.uint32)
+    values.dtype = tensor_dtype.as_numpy_dtype
+  elif tensor_dtype == dtypes.posit8e2:
+    values = np.fromiter(tensor.half_val, dtype=np.uint8)
     values.dtype = tensor_dtype.as_numpy_dtype
   elif tensor_dtype in [
       dtypes.int32, dtypes.uint8, dtypes.uint16, dtypes.int16, dtypes.int8,

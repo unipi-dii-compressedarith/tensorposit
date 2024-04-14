@@ -156,8 +156,12 @@ Status CpuCastOp::Prepare() {
     work_ = GetCpuCastFromComplex128(dst_dtype_);
   } else if (src_dtype_ == DT_BFLOAT16) {
     work_ = GetCpuCastFromBfloat(dst_dtype_);
-  } else if (src_dtype_ == DT_POSIT160) {
-    work_ = GetCpuCastFromPosit160(dst_dtype_);
+  } else if (src_dtype_ == DT_POSIT162) {
+    work_ = GetCpuCastFromPosit16e2(dst_dtype_);
+  } else if (src_dtype_ == DT_POSIT82) {
+    work_ = GetCpuCastFromPosit8e2(dst_dtype_);
+  } else if (src_dtype_ == DT_POSIT322) {
+    work_ = GetCpuCastFromPosit32e2(dst_dtype_);
   }
 
   // TODO(sesse): If CPU casting to or from Eigen::half ever becomes a
@@ -212,9 +216,7 @@ class GpuCastOp : public CastOpBase {
       work_ = GetGpuCastFromComplex128(dst_dtype_);
     } else if (src_dtype_ == DT_BFLOAT16) {
       work_ = GetGpuCastFromBfloat(dst_dtype_);
-    } /*else if (src_dtype_ == DT_POSIT160) {
-    work_ = GetCpuCastFromPosit160(dst_dtype_);
-    }*/
+    } 
 
     return work_ == nullptr ? Unimplemented() : Status::OK();
   }

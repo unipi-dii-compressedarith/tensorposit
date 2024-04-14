@@ -28,12 +28,16 @@ from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
 from tensorflow.python.framework import _dtypes
 from tensorflow.python.types import doc_typealias
 from tensorflow.python.lib.core import _pywrap_bfloat16
-from tensorflow.python.lib.core import _pywrap_posit160
+from tensorflow.python.lib.core import _pywrap_posit16e2
+from tensorflow.python.lib.core import _pywrap_posit32e2
+from tensorflow.python.lib.core import _pywrap_posit8e2
 
 from tensorflow.python.util.tf_export import tf_export
 
 _np_bfloat16 = _pywrap_bfloat16.TF_bfloat16_type()
-_np_posit160 = _pywrap_posit160.TF_posit160_type()
+_np_posit16e2 = _pywrap_posit16e2.TF_posit16e2_type()
+_np_posit8e2 = _pywrap_posit8e2.TF_posit8e2_type()
+_np_posit32e2 = _pywrap_posit32e2.TF_posit32e2_type()
 
 
 @tf_export("dtypes.DType", "DType")
@@ -363,11 +367,24 @@ doc_typealias.document(
     doc="16-bit bfloat (brain floating point).")
 tf_export("dtypes.bfloat16", "bfloat16").export_constant(__name__, "bfloat16")
 
-posit160 = DType(types_pb2.DT_POSIT160)
+posit16e2 = DType(types_pb2.DT_POSIT162)
+posit8e2 = DType(types_pb2.DT_POSIT82)
+posit32e2 = DType(types_pb2.DT_POSIT322)
+
 doc_typealias.document(
-    obj=posit160,
-    doc="16-bit posit (brain floating point).")
-tf_export("dtypes.posit160", "posit160").export_constant(__name__, "posit160")
+    obj=posit16e2,
+    doc="Posit<16,2>")
+tf_export("dtypes.posit16e2", "posit16e2").export_constant(__name__, "posit16e2")
+
+doc_typealias.document(
+    obj=posit32e2,
+    doc="Posit<32,2>")
+tf_export("dtypes.posit32e2", "posit32e2").export_constant(__name__, "posit32e2")
+
+doc_typealias.document(
+    obj=posit8e2,
+    doc="Posit<8,2>")
+tf_export("dtypes.posit8e2", "posit8e2").export_constant(__name__, "posit8e2")
 
 resource_ref = DType(types_pb2.DT_RESOURCE_REF)
 variant_ref = DType(types_pb2.DT_VARIANT_REF)
@@ -394,7 +411,9 @@ qint16_ref = DType(types_pb2.DT_QINT16_REF)
 quint16_ref = DType(types_pb2.DT_QUINT16_REF)
 qint32_ref = DType(types_pb2.DT_QINT32_REF)
 bfloat16_ref = DType(types_pb2.DT_BFLOAT16_REF)
-posit160_ref = DType(types_pb2.DT_POSIT160_REF)
+posit16e2_ref = DType(types_pb2.DT_POSIT162_REF)
+posit8e2_ref = DType(types_pb2.DT_POSIT82_REF)
+posit32e2_ref = DType(types_pb2.DT_POSIT322_REF)
 
 # Maintain an intern table so that we don't have to create a large
 # number of small objects.
@@ -420,7 +439,9 @@ _INTERN_TABLE = {
     types_pb2.DT_QUINT16: quint16,
     types_pb2.DT_QINT32: qint32,
     types_pb2.DT_BFLOAT16: bfloat16,
-    types_pb2.DT_POSIT160: posit160,
+    types_pb2.DT_POSIT162: posit16e2,
+    types_pb2.DT_POSIT322: posit32e2,
+    types_pb2.DT_POSIT82: posit8e2,
     types_pb2.DT_RESOURCE: resource,
     types_pb2.DT_VARIANT: variant,
     types_pb2.DT_HALF_REF: float16_ref,
@@ -444,7 +465,9 @@ _INTERN_TABLE = {
     types_pb2.DT_QUINT16_REF: quint16_ref,
     types_pb2.DT_QINT32_REF: qint32_ref,
     types_pb2.DT_BFLOAT16_REF: bfloat16_ref,
-    types_pb2.DT_POSIT160_REF: posit160_ref,
+    types_pb2.DT_POSIT162_REF: posit16e2_ref,
+    types_pb2.DT_POSIT322_REF: posit32e2_ref,
+    types_pb2.DT_POSIT82_REF: posit8e2_ref,
     types_pb2.DT_RESOURCE_REF: resource_ref,
     types_pb2.DT_VARIANT_REF: variant_ref,
 }
@@ -472,7 +495,9 @@ _TYPE_TO_STRING = {
     types_pb2.DT_QUINT16: "quint16",
     types_pb2.DT_QINT32: "qint32",
     types_pb2.DT_BFLOAT16: "bfloat16",
-    types_pb2.DT_POSIT160: "posit160",
+    types_pb2.DT_POSIT162: "posit16e2",
+    types_pb2.DT_POSIT322: "posit32e2",
+    types_pb2.DT_POSIT82: "posit8e2",
     types_pb2.DT_RESOURCE: "resource",
     types_pb2.DT_VARIANT: "variant",
     types_pb2.DT_HALF_REF: "float16_ref",
@@ -496,7 +521,9 @@ _TYPE_TO_STRING = {
     types_pb2.DT_QUINT16_REF: "quint16_ref",
     types_pb2.DT_QINT32_REF: "qint32_ref",
     types_pb2.DT_BFLOAT16_REF: "bfloat16_ref",
-    types_pb2.DT_POSIT160_REF: "posit160_ref",
+    types_pb2.DT_POSIT162_REF: "posit162e2_ref",
+    types_pb2.DT_POSIT322_REF: "posit32e2_ref",
+    types_pb2.DT_POSIT82_REF: "posit8e2_ref",
     types_pb2.DT_RESOURCE_REF: "resource_ref",
     types_pb2.DT_VARIANT_REF: "variant_ref",
 }
@@ -553,7 +580,10 @@ _NP_TO_TF = {
     _np_quint16: quint16,
     _np_qint32: qint32,
     _np_bfloat16: bfloat16,
-    _np_posit160: posit160
+    _np_posit16e2: posit16e2,
+    _np_posit8e2: posit8e2,
+    _np_posit32e2: posit32e2
+
 }
 
 # Map (some) NumPy platform dtypes to TF ones using their fixed-width
@@ -618,8 +648,12 @@ _TF_TO_NP = {
         _np_qint32,
     types_pb2.DT_BFLOAT16:
         _np_bfloat16,
-    types_pb2.DT_POSIT160:
-        _np_posit160,        
+    types_pb2.DT_POSIT162:
+        _np_posit16e2,
+    types_pb2.DT_POSIT322:
+        _np_posit32e2,   
+    types_pb2.DT_POSIT82:
+        _np_posit8e2,           
 
     # Ref types
     types_pb2.DT_HALF_REF:
@@ -664,8 +698,12 @@ _TF_TO_NP = {
         _np_qint32,
     types_pb2.DT_BFLOAT16_REF:
         _np_bfloat16,
-    types_pb2.DT_POSIT160_REF:
-        _np_posit160,        
+    types_pb2.DT_POSIT162_REF:
+        _np_posit16e2,   
+    types_pb2.DT_POSIT322_REF:
+        _np_posit32e2,     
+    types_pb2.DT_POSIT82_REF:
+        _np_posit8e2,          
 }
 
 _QUANTIZED_DTYPES_NO_REF = frozenset([qint8, quint8, qint16, quint16, qint32])

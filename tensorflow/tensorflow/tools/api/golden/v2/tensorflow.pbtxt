@@ -122,7 +122,17 @@ tf_module {
   }
 
   member {
-    name: "posit160"
+    name: "posit16e2"
+    mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
+  }
+
+  member {
+    name: "posit32e2"
+    mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
+  }
+
+  member {
+    name: "posit8e2"
     mtype: "<class \'tensorflow.python.framework.dtypes.DType\'>"
   }
 

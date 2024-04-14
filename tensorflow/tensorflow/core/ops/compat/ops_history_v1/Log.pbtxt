@@ -39,7 +39,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
         type: DT_COMPLEX64
@@ -64,7 +66,9 @@ op {
     allowed_values {
       list {
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_HALF
         type: DT_FLOAT
         type: DT_DOUBLE

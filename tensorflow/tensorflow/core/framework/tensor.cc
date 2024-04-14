@@ -459,12 +459,34 @@ struct ProtoHelper<bfloat16> {
 };
 
 template <>
-struct ProtoHelper<posit160> {
-  static void Fill(const posit160* data, size_t n, TensorProto* proto) {
+struct ProtoHelper<posit16e2> {
+  static void Fill(const posit16e2* data, size_t n, TensorProto* proto) {
     proto->mutable_half_val()->Reserve(n);
     for (size_t i = 0; i < n; ++i) {
       proto->mutable_half_val()->AddAlreadyReserved(
           Eigen::numext::bit_cast<uint16>(data[i]));
+    }
+  }
+};
+
+template <>
+struct ProtoHelper<posit32e2> {
+  static void Fill(const posit32e2* data, size_t n, TensorProto* proto) {
+    proto->mutable_uint32_val()->Reserve(n);
+    for (size_t i = 0; i < n; ++i) {
+      proto->mutable_uint32_val()->AddAlreadyReserved(
+          Eigen::numext::bit_cast<uint32>(data[i]));
+    }
+  }
+};
+
+template <>
+struct ProtoHelper<posit8e2> {
+  static void Fill(const posit8e2* data, size_t n, TensorProto* proto) {
+    proto->mutable_uint32_val()->Reserve(n);
+    for (size_t i = 0; i < n; ++i) {
+      proto->mutable_uint32_val()->AddAlreadyReserved(
+          Eigen::numext::bit_cast<uint8>(data[i]));
     }
   }
 };
@@ -632,10 +654,34 @@ TensorBuffer* FromProtoField<bfloat16>(Allocator* a, const TensorProto& in,
 }
 
 template <>
-TensorBuffer* FromProtoField<posit160>(Allocator* a, const TensorProto& in,
+TensorBuffer* FromProtoField<posit8e2>(Allocator* a, const TensorProto& in,
                                        int64 n) {
   CHECK_GT(n, 0);
-  Buffer<posit160>* buf = new Buffer<posit160>(a, n);
+  Buffer<posit8e2>* buf = new Buffer<posit8e2>(a, n);
+  uint8* data = buf->template base<uint8>();
+  if (data == nullptr) {
+    buf->Unref();
+    return nullptr;
+  }
+  const int64 in_n = in.uint32_val().size();
+  auto begin = in.uint32_val().begin();
+  if (n <= in_n) {
+    std::copy_n(begin, n, data);
+  } else if (in_n > 0) {
+    std::copy_n(begin, in_n, data);
+    const uint8 last = *(data + in_n - 1);
+    std::fill_n(data + in_n, n - in_n, last);
+  } else {
+    std::fill_n(data, n, 0);
+  }
+  return buf;
+}
+
+template <>
+TensorBuffer* FromProtoField<posit16e2>(Allocator* a, const TensorProto& in,
+                                       int64 n) {
+  CHECK_GT(n, 0);
+  Buffer<posit16e2>* buf = new Buffer<posit16e2>(a, n);
   uint16* data = buf->template base<uint16>();
   if (data == nullptr) {
     buf->Unref();
@@ -648,6 +694,30 @@ TensorBuffer* FromProtoField<posit160>(Allocator* a, const TensorProto& in,
   } else if (in_n > 0) {
     std::copy_n(begin, in_n, data);
     const uint16 last = *(data + in_n - 1);
+    std::fill_n(data + in_n, n - in_n, last);
+  } else {
+    std::fill_n(data, n, 0);
+  }
+  return buf;
+}
+
+template <>
+TensorBuffer* FromProtoField<posit32e2>(Allocator* a, const TensorProto& in,
+                                       int64 n) {
+  CHECK_GT(n, 0);
+  Buffer<posit32e2>* buf = new Buffer<posit32e2>(a, n);
+  uint32* data = buf->template base<uint32>();
+  if (data == nullptr) {
+    buf->Unref();
+    return nullptr;
+  }
+  const int64 in_n = in.uint32_val().size();
+  auto begin = in.uint32_val().begin();
+  if (n <= in_n) {
+    std::copy_n(begin, n, data);
+  } else if (in_n > 0) {
+    std::copy_n(begin, in_n, data);
+    const uint32 last = *(data + in_n - 1);
     std::fill_n(data + in_n, n - in_n, last);
   } else {
     std::fill_n(data, n, 0);
@@ -782,7 +852,9 @@ bool Tensor::RefCountIsOne() const {
     CASE(quint16, SINGLE_ARG(STMTS))                           \
     CASE(qint16, SINGLE_ARG(STMTS))                            \
     CASE(bfloat16, SINGLE_ARG(STMTS))                          \
-    CASE(posit160, SINGLE_ARG(STMTS))                          \
+    CASE(posit16e2, SINGLE_ARG(STMTS))                          \
+    CASE(posit32e2, SINGLE_ARG(STMTS))                          \
+    CASE(posit8e2, SINGLE_ARG(STMTS))                          \
     CASE(Eigen::half, SINGLE_ARG(STMTS))                       \
     CASE(ResourceHandle, SINGLE_ARG(STMTS))                    \
     CASE(Variant, SINGLE_ARG(STMTS))                           \
@@ -1050,9 +1122,7 @@ inline float PrintOneElement(bfloat16 f, bool print_v2) {
   return static_cast<float>(f);
 }
 
-/*inline float PrintOneElement(posit160 f, bool print_v2) {
-  return static_cast<float>(f);
-}*/
+
 
 
 // Print from left dim to right dim recursively.

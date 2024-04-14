@@ -33892,8 +33892,9 @@ op {
       list {
         type: DT_FLOAT
         type: DT_BFLOAT16 
-        type: DT_POSIT160 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -33907,8 +33908,9 @@ op {
       list {
         type: DT_FLOAT
         type: DT_BFLOAT16 
-        type: DT_POSIT160 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }

@@ -19,8 +19,10 @@ namespace tensorflow {
 
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER5(UnaryOp, CPU, "Floor", functor::floor, float, Eigen::half, bfloat16,posit160,
+REGISTER5(UnaryOp, CPU, "Floor", functor::floor, float, Eigen::half, bfloat16,posit16e2,
           double);
+REGISTER2(UnaryOp, CPU, "Floor",functor::floor, posit32e2, posit8e2);
+
 #else
 REGISTER(UnaryOp, CPU, "Floor", functor::floor, bfloat16);
 #endif

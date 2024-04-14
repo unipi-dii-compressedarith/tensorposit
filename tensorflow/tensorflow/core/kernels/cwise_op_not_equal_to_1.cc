@@ -16,8 +16,10 @@ limitations under the License.
 #include "tensorflow/core/kernels/cwise_ops_common.h"
 
 namespace tensorflow {
-REGISTER8(BinaryOp, CPU, "NotEqual", functor::not_equal_to, float, Eigen::half,posit160,
+REGISTER8(BinaryOp, CPU, "NotEqual", functor::not_equal_to, float, Eigen::half,posit16e2,
           double, uint8, int8, int16, bfloat16);
+REGISTER2(BinaryOp, CPU, "NotEqual",functor::not_equal_to, posit32e2, posit8e2);
+
 REGISTER7(BinaryOp, CPU, "NotEqual", functor::not_equal_to, uint16, uint32,
           uint64, qint8, qint16, quint8, quint16);
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM

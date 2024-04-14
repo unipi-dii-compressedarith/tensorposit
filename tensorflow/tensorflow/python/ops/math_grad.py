@@ -1963,7 +1963,7 @@ def _ComplexAbsGrad(op, grad):
 def _CastGrad(op, grad):
   t = [
       dtypes.float16, dtypes.float32, dtypes.float64, dtypes.bfloat16,
-      dtypes.complex64, dtypes.complex128, dtypes.posit160
+      dtypes.complex64, dtypes.complex128, dtypes.posit8e2, dtypes.posit16e2, dtypes.posit32e2
   ]
   src_type = op.inputs[0].dtype.base_dtype
   dst_type = grad.dtype.base_dtype

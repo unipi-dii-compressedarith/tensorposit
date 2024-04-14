@@ -4791,9 +4791,12 @@ def _padding_values_or_default(padding_values, input_dataset):
     elif t.base_dtype == dtypes.bfloat16:
       # Special case `bfloat16` because it is not supported by NumPy.
       return constant_op.constant(0, dtype=dtypes.bfloat16)
-    elif t.base_dtype == dtypes.posit160:
-      # Special case `posit160` because it is not supported by NumPy.
-      return constant_op.constant(0, dtype=dtypes.posit160)      
+    elif t.base_dtype == dtypes.posit16e2:
+      return constant_op.constant(0, dtype=dtypes.posit16e2)  
+    elif t.base_dtype == dtypes.posit8e2:
+      return constant_op.constant(0, dtype=dtypes.posit8e2)      
+    elif t.base_dtype == dtypes.posit32e2:
+      return constant_op.constant(0, dtype=dtypes.posit32e2)          
     else:
       return np.zeros_like(t.as_numpy_dtype())
 

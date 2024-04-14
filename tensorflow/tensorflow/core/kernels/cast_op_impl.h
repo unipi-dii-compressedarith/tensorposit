@@ -52,7 +52,9 @@ CAST_FUNCTORS(Eigen::ThreadPoolDevice);
 #define CURRY_TYPES3(FN, arg0, arg1)   \
   CURRY_TYPES3_NO_BF16(FN, arg0, arg1) \
   FN(arg0, arg1, bfloat16); \
-  FN(arg0, arg1, posit160);
+  FN(arg0, arg1, posit16e2); \
+  FN(arg0, arg1, posit32e2); \
+  FN(arg0, arg1, posit8e2);
 
 #define CAST_CASE(DEVICE, IN, OUT)                                        \
   if (DataTypeToEnum<OUT>::value == dst_dtype) {                          \
@@ -97,7 +99,9 @@ CastFunctorType GetCpuCastFromComplex128(DataType dst_dtype);
 
 CastFunctorType GetCpuCastFromBfloat(DataType dst_dtype);
 
-CastFunctorType GetCpuCastFromPosit160(DataType dst_dtype);
+CastFunctorType GetCpuCastFromPosit16e2(DataType dst_dtype);
+CastFunctorType GetCpuCastFromPosit32e2(DataType dst_dtype);
+CastFunctorType GetCpuCastFromPosit8e2(DataType dst_dtype);
 
 
 #if (defined(GOOGLE_CUDA) && GOOGLE_CUDA) || \

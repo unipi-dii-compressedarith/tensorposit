@@ -253,7 +253,7 @@ REGISTER_XLA_OP(Name("StatefulUniform")
                     .CompileTimeConstantInput("algorithm")
                     .CompileTimeConstantInput("shape")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT162, DT_POSIT82, DT_POSIT322}),
                 StatefulUniformOp);
 
 class StatefulStandardNormalOp : public XlaOpKernel {
@@ -292,7 +292,7 @@ REGISTER_XLA_OP(Name("StatefulStandardNormalV2")
                     .CompileTimeConstantInput("algorithm")
                     .CompileTimeConstantInput("shape")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT162, DT_POSIT82, DT_POSIT322}),
                 StatefulStandardNormalOp);
 
 class StatefulTruncatedNormalOp : public XlaOpKernel {
@@ -338,7 +338,7 @@ REGISTER_XLA_OP(Name("StatefulTruncatedNormal")
                     .CompileTimeConstantInput("algorithm")
                     .CompileTimeConstantInput("shape")
                     .TypeConstraint("dtype",
-                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT160}),
+                                    {DT_DOUBLE, DT_FLOAT, DT_BFLOAT16, DT_POSIT162, DT_POSIT82, DT_POSIT322}),
                 StatefulTruncatedNormalOp);
 
 class StatefulUniformIntOp : public XlaOpKernel {

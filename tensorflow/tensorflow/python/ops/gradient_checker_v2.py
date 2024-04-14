@@ -262,7 +262,7 @@ def _compute_gradient(f, y_shape, y_dtype, xs, param, delta):
   t = x.dtype
   allowed_types = [
       dtypes.float16, dtypes.bfloat16, dtypes.float32, dtypes.float64,
-      dtypes.complex64, dtypes.complex128, dtypes.posit160
+      dtypes.complex64, dtypes.complex128, dtypes.posit8e2, dtypes.posit16e2, dtypes.posit32e2
   ]
   assert t.base_dtype in allowed_types, ("Cannot compute gradient for "
                                          "unsupported type %s of argument %s" %

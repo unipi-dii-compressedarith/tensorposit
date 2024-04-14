@@ -95,7 +95,9 @@ op {
         type: DT_UINT32
         type: DT_UINT64
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }
@@ -127,7 +129,9 @@ op {
         type: DT_INT8
         type: DT_INT64
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_UINT16
         type: DT_HALF
         type: DT_UINT32
@@ -157,7 +161,9 @@ op {
       list {
         type: DT_HALF
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
         type: DT_FLOAT
         type: DT_DOUBLE
       }

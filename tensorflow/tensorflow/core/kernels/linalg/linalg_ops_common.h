@@ -190,7 +190,10 @@ class LinearAlgebraOp : public OpKernel {
 // linalg_ops_common.cc for float, double, complex64, and complex128.
 extern template class LinearAlgebraOp<float>;
 extern template class LinearAlgebraOp<double>;
-extern template class LinearAlgebraOp<posit160>;
+extern template class LinearAlgebraOp<posit16e2>;
+extern template class LinearAlgebraOp<posit8e2>;
+extern template class LinearAlgebraOp<posit32e2>;
+
 extern template class LinearAlgebraOp<complex64>;
 extern template class LinearAlgebraOp<complex128>;
 

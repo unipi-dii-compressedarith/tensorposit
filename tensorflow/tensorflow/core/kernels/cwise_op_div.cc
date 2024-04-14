@@ -18,15 +18,20 @@ limitations under the License.
 namespace tensorflow {
 
 REGISTER7(BinaryOp, CPU, "Div", functor::div, float, Eigen::half, double,
-          bfloat16,posit160, complex64, complex128);
+          bfloat16,posit16e2, complex64, complex128);
+REGISTER2(BinaryOp, CPU, "Div",functor::div, posit32e2, posit8e2);
+
 REGISTER8(BinaryOp, CPU, "Div", functor::safe_div, uint8, uint16, uint32,
           uint64, int8, int16, int32, int64);
 REGISTER8(BinaryOp, CPU, "TruncateDiv", functor::safe_div, uint8, uint16,
           uint32, uint64, int8, int16, int32, int64);
 REGISTER7(BinaryOp, CPU, "RealDiv", functor::div, float, Eigen::half, double,
-          bfloat16, posit160, complex64, complex128);
+          bfloat16, posit16e2, complex64, complex128);
+REGISTER2(BinaryOp, CPU, "RealDiv",functor::div, posit32e2, posit8e2);
+
 REGISTER6(BinaryOp, CPU, "DivNoNan", functor::div_no_nan, Eigen::half, float,
-          posit160, double, complex64, complex128);
+          posit16e2, double, complex64, complex128);
+REGISTER2(BinaryOp, CPU, "DivNoNan",functor::div_no_nan, posit32e2, posit8e2);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)

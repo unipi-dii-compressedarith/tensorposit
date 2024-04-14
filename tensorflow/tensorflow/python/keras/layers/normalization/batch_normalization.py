@@ -262,7 +262,7 @@ class BatchNormalizationBase(Layer):
       raise ValueError('Passing `fused=True` is not supported when '
                        '`adjustment` is specified.')
     # TODO(reedwm): Support fp64 in FusedBatchNorm then remove this check.
-    if self._compute_dtype not in ('float16', 'bfloat16', 'float32','posit160', None):
+    if self._compute_dtype not in ('float16', 'bfloat16', 'float32','posit16e2', 'posit32e2', 'posit8e2', None):
       raise ValueError(
           'Passing `fused=True` is only supported when the compute '
           'dtype is float16, bfloat16, or float32. Got dtype: %s' %
@@ -286,7 +286,7 @@ class BatchNormalizationBase(Layer):
   @property
   def _param_dtype(self):
     # Raise parameters of fp16 batch norm to fp32
-    if self.dtype == dtypes.float16 or self.dtype == dtypes.bfloat16 or self.dtype == dtypes.posit160:
+    if self.dtype == dtypes.float16 or self.dtype == dtypes.bfloat16 or self.dtype == dtypes.posit16e2 or self.dtype == dtypes.posit32e2 or self.dtype == dtypes.posit8e2:
       return dtypes.float32
     else:
       return self.dtype or dtypes.float32
@@ -775,7 +775,7 @@ class BatchNormalizationBase(Layer):
       return outputs
 
     inputs_dtype = inputs.dtype.base_dtype
-    if inputs_dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit160):
+    if inputs_dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit16e2, dtypes.posit32e2, dtypes.posit8e2):
       # Do all math in float32 if given 16-bit inputs for numeric stability.
       # In particular, it's very easy for variance to overflow in float16 and
       # for safety we also choose to cast bfloat16 to float32.
@@ -913,7 +913,7 @@ class BatchNormalizationBase(Layer):
     outputs = nn.batch_normalization(inputs, _broadcast(mean),
                                      _broadcast(variance), offset, scale,
                                      self.epsilon)
-    if inputs_dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit160):
+    if inputs_dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit16e2, dtypes.posit32e2, dtypes.posit8e2):
       outputs = math_ops.cast(outputs, inputs_dtype)
 
     # If some components of the shape got lost due to adjustments, fix that.

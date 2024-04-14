@@ -14,6 +14,9 @@ limitations under the License.
 
 namespace tensorflow {
 
-TF_CALL_posit160(REGISTER_CONV_2D_BACKPROP_CPU_KERNELS);
+TF_CALL_posit16e2(REGISTER_CONV_2D_BACKPROP_CPU_KERNELS);
+TF_CALL_posit32e2(REGISTER_CONV_2D_BACKPROP_CPU_KERNELS);
+TF_CALL_posit8e2(REGISTER_CONV_2D_BACKPROP_CPU_KERNELS);
+
 
 }  // namespace tensorflow

@@ -519,7 +519,7 @@ def embedding_lookup_sparse(params,
       embeddings = array_ops.gather(embeddings, idx)
 
       original_dtype = embeddings.dtype
-      if embeddings.dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit160):
+      if embeddings.dtype in (dtypes.float16, dtypes.bfloat16, dtypes.posit8e2, dtypes.posit16e2, dtypes.posit32e2):
         # Cast low-precision embeddings to float32 during the computation to
         # avoid numerical issues.
         embeddings = math_ops.cast(embeddings, dtypes.float32)

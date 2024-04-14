@@ -1582,9 +1582,21 @@ REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV2")
 
 REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV2")
                             .Device(DEVICE_CPU)
-                            .TypeConstraint<posit160>("T")
+                            .TypeConstraint<posit16e2>("T")
                             .TypeConstraint<float>("U"),
-                        FusedBatchNormOp<CPUDevice, posit160, float>);
+                        FusedBatchNormOp<CPUDevice, posit16e2, float>);
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV2")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit32e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormOp<CPUDevice, posit32e2, float>);
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV2")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit8e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormOp<CPUDevice, posit8e2, float>);
 
 
 REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV2")
@@ -1613,9 +1625,21 @@ REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV3")
 
 REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV3")
                             .Device(DEVICE_CPU)
-                            .TypeConstraint<posit160>("T")
+                            .TypeConstraint<posit16e2>("T")
                             .TypeConstraint<float>("U"),
-                        FusedBatchNormOpV3<CPUDevice, posit160, float>);                        
+                        FusedBatchNormOpV3<CPUDevice, posit16e2, float>);                        
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV3")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit8e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormOpV3<CPUDevice, posit8e2, float>);    
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormV3")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit32e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormOpV3<CPUDevice, posit32e2, float>);    
 
 REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV3")
                             .Device(DEVICE_CPU)
@@ -1625,9 +1649,21 @@ REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV3")
 
 REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV3")
                             .Device(DEVICE_CPU)
-                            .TypeConstraint<posit160>("T")
+                            .TypeConstraint<posit16e2>("T")
                             .TypeConstraint<float>("U"),
-                        FusedBatchNormGradOpV3<CPUDevice, posit160, float>);                        
+                        FusedBatchNormGradOpV3<CPUDevice, posit16e2, float>);    
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV3")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit32e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormGradOpV3<CPUDevice, posit32e2, float>);   
+
+REGISTER_KERNEL_BUILDER(Name("FusedBatchNormGradV3")
+                            .Device(DEVICE_CPU)
+                            .TypeConstraint<posit8e2>("T")
+                            .TypeConstraint<float>("U"),
+                        FusedBatchNormGradOpV3<CPUDevice, posit8e2, float>);                       
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 

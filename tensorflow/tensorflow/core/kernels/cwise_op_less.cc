@@ -17,9 +17,10 @@ limitations under the License.
 
 namespace tensorflow {
 REGISTER6(BinaryOp, CPU, "Less", functor::less, float, Eigen::half, double,
-          bfloat16,posit160, int32);
+          bfloat16,posit16e2, int32);
 REGISTER7(BinaryOp, CPU, "Less", functor::less, uint8, uint16, uint32, uint64,
           int8, int16, int64);
+REGISTER2(BinaryOp, CPU, "Less",functor::less, posit32e2, posit8e2);
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)

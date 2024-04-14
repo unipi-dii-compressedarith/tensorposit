@@ -14,14 +14,15 @@ limitations under the License.
 
 namespace tensorflow {
 
-REGISTER_LINALG_OP("Qr", (QrOp<posit160>), posit160);
+REGISTER_LINALG_OP("Qr", (QrOp<posit16e2>), posit16e2);
+REGISTER_LINALG_OP("Qr", (QrOp<posit8e2>), posit8e2);
+REGISTER_LINALG_OP("Qr", (QrOp<posit32e2>), posit32e2);
 
 #if GOOGLE_CUDA
 // We temporarily disable QR on GPU due to a bug in the QR implementation in
 // cuSolver affecting older hardware. The cuSolver team is tracking the issue
 // (https://partners.nvidia.com/bug/viewbug/2171459) and we will re-enable
 // this feature when a fix is available.
-// REGISTER_LINALG_OP_GPU("Qr", (QrOpGpu<posit160>), posit160);
 #endif
 
 }  // namespace tensorflow

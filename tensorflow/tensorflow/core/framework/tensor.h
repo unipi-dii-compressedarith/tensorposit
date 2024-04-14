@@ -229,8 +229,12 @@ class Tensor {
       : Tensor(scalar_value, host_scalar_tag{}) {}
   explicit Tensor(bfloat16 scalar_value)
       : Tensor(scalar_value, host_scalar_tag{}) {}
-  explicit Tensor(posit160 scalar_value)
+  explicit Tensor(posit16e2 scalar_value)
       : Tensor(scalar_value, host_scalar_tag{}) {}      
+  explicit Tensor(posit32e2 scalar_value)
+      : Tensor(scalar_value, host_scalar_tag{}) {}    
+  explicit Tensor(posit8e2 scalar_value)
+      : Tensor(scalar_value, host_scalar_tag{}) {}    
   explicit Tensor(Eigen::half scalar_value)
       : Tensor(scalar_value, host_scalar_tag{}) {}
   explicit Tensor(ResourceHandle scalar_value)

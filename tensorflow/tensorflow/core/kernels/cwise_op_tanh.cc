@@ -19,7 +19,9 @@ limitations under the License.
 namespace tensorflow {
 #if !defined(MLIR_GENERATED_CPU_KERNELS_ENABLED) || \
     !defined(MLIR_GENERATED_EXPERIMENTAL_KERNELS_ENABLED)
-REGISTER4(UnaryOp, CPU, "Tanh", functor::tanh, float, Eigen::half,posit160, double);
+REGISTER4(UnaryOp, CPU, "Tanh", functor::tanh, float, Eigen::half,posit16e2, double);
+REGISTER2(UnaryOp, CPU, "Tanh",functor::tanh, posit32e2, posit8e2);
+
 #endif
 REGISTER3(UnaryOp, CPU, "Tanh", functor::tanh, bfloat16, complex64, complex128);
 
@@ -31,7 +33,9 @@ REGISTER(UnaryOp, GPU, "Tanh", functor::tanh, bfloat16)
 #endif
 
 REGISTER7(SimpleBinaryOp, CPU, "TanhGrad", functor::tanh_grad, float,
-          posit160, Eigen::half, bfloat16, double, complex64, complex128);
+          posit16e2, Eigen::half, bfloat16, double, complex64, complex128);
+REGISTER2(SimpleBinaryOp, CPU, "TanhGrad",functor::tanh_grad, posit32e2, posit8e2);
+
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 REGISTER3(SimpleBinaryOp, GPU, "TanhGrad", functor::tanh_grad, float,
           Eigen::half, double);

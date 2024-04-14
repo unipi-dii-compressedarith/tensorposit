@@ -17,7 +17,9 @@ limitations under the License.
 
 namespace tensorflow {
 REGISTER8(BinaryOp, CPU, "Equal", functor::equal_to, float, Eigen::half, double,
-          uint8, int8, int16, bfloat16, posit160);
+          uint8, int8, int16, bfloat16, posit16e2);
+REGISTER2(BinaryOp, CPU, "Equal",functor::equal_to, posit32e2, posit8e2);
+
 REGISTER7(BinaryOp, CPU, "Equal", functor::equal_to, uint16, uint32, uint64,
           qint8, qint16, quint8, quint16);
 REGISTER_KERNEL_BUILDER(

@@ -170,7 +170,9 @@ op {
         type: DT_COMPLEX128
         type: DT_BOOL
         type: DT_BFLOAT16 
-        type: DT_POSIT160
+        type: DT_POSIT162
+        type: DT_POSIT82
+        type: DT_POSIT322
       }
     }
   }

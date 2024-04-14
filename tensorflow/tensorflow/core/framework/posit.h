@@ -49,12 +49,29 @@ limitations under the License.
 namespace tensorflow {
 
 // Convert from float to bfloat16 with rounding-to-nearest-even.
-void RoundFloatToPosit160(const float* src, posit160* dst, int64 size);
+void RoundFloatToPosit16e2(const float* src, posit16e2* dst, int64 size);
 // Convert from float to bfloat16 with truncation. Notice this conversion is
 // lossy since it truncates the float to 7 mantissa bits without rounding.
-void FloatToPosit160(const float* src, posit160* dst, int64 size);
+void FloatToPosit16e2(const float* src, posit16e2* dst, int64 size);
 // Convert from bfloat16 to float. This conversion is lossless.
-void Posit160ToFloat(const posit160* src, float* dst, int64 size);
+void Posit16e2ToFloat(const posit16e2* src, float* dst, int64 size);
+
+// Convert from float to bfloat16 with rounding-to-nearest-even.
+void RoundFloatToPosit8e2(const float* src, posit8e2* dst, int64 size);
+// Convert from float to bfloat16 with truncation. Notice this conversion is
+// lossy since it truncates the float to 7 mantissa bits without rounding.
+void FloatToPosit8e2(const float* src, posit8e2* dst, int64 size);
+// Convert from bfloat16 to float. This conversion is lossless.
+void Posit8e2ToFloat(const posit8e2* src, float* dst, int64 size);
+
+
+// Convert from float to bfloat16 with rounding-to-nearest-even.
+void RoundFloatToPosit32e2(const float* src, posit32e2* dst, int64 size);
+// Convert from float to bfloat16 with truncation. Notice this conversion is
+// lossy since it truncates the float to 7 mantissa bits without rounding.
+void FloatToPosit32e2(const float* src, posit32e2* dst, int64 size);
+// Convert from bfloat16 to float. This conversion is lossless.
+void Posit32e2ToFloat(const posit32e2* src, float* dst, int64 size);
 
 }  // namespace tensorflow
 

@@ -17,7 +17,9 @@ limitations under the License.
 
 namespace tensorflow {
 REGISTER5(UnaryOp, CPU, "IsFinite", functor::isfinite, float, Eigen::half,
-          bfloat16, double, posit160);
+          bfloat16, double, posit16e2);
+REGISTER2(UnaryOp, CPU, "IsFinite",functor::isfinite, posit32e2, posit8e2);
+
 
 #if GOOGLE_CUDA || TENSORFLOW_USE_ROCM
 #if !defined(MLIR_GENERATED_GPU_KERNELS_ENABLED)

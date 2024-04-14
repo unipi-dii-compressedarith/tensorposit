@@ -293,8 +293,18 @@ alias(
 )
 
 alias(
-    name = "posit160_lib",
-    actual = "//tensorflow/python/lib/core:posit160_lib",
+    name = "posit16e2_lib",
+    actual = "//tensorflow/python/lib/core:posit16e2_lib",
+)
+
+alias(
+    name = "posit32e2_lib",
+    actual = "//tensorflow/python/lib/core:posit32e2_lib",
+)
+
+alias(
+    name = "posit8e2_lib",
+    actual = "//tensorflow/python/lib/core:posit8e2_lib",
 )
 
 # Necessary for the pywrap inclusion below.
@@ -3124,7 +3134,9 @@ pywrap_tensorflow_macro(
     # copybara:comment_end
     deps = [
         ":bfloat16_lib",
-        ":posit160_lib",
+        ":posit16e2_lib",
+        ":posit32e2_lib",
+        ":posit8e2_lib",
         "//tensorflow/core/distributed_runtime/rpc:grpc_server_lib",
         "//tensorflow/core/distributed_runtime/rpc:grpc_session",
         "//tensorflow/python/grappler:cost_analyzer_lib",
@@ -3205,7 +3217,9 @@ filegroup(
     name = "win_lib_files_for_exported_symbols",
     srcs = [
         ":bfloat16_lib",  # bfloat16
-        ":posit160_lib",
+        ":posit16e2_lib",
+        ":posit32e2_lib",
+        ":posit8e2_lib",
         "//tensorflow/python/grappler:cost_analyzer_lib",
         "//tensorflow/python/util:cpp_nest",
         "//tensorflow/python/util:cpp_python_util",

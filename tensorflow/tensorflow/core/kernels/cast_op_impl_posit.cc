@@ -22,8 +22,18 @@ namespace tensorflow {
 typedef Eigen::ThreadPoolDevice CPUDevice;
 typedef Eigen::GpuDevice GPUDevice;
 
-CastFunctorType GetCpuCastFromPosit160(DataType dst_dtype) {
-  CURRY_TYPES3(CAST_CASE, CPUDevice, posit160);
+CastFunctorType GetCpuCastFromPosit16e2(DataType dst_dtype) {
+  CURRY_TYPES3_NO_HALF(CAST_CASE, CPUDevice, posit16e2);
+  return nullptr;
+}
+
+CastFunctorType GetCpuCastFromPosit8e2(DataType dst_dtype) {
+  CURRY_TYPES3_NO_HALF(CAST_CASE, CPUDevice, posit8e2);
+  return nullptr;
+}
+
+CastFunctorType GetCpuCastFromPosit32e2(DataType dst_dtype) {
+  CURRY_TYPES3_NO_HALF(CAST_CASE, CPUDevice, posit32e2);
   return nullptr;
 }
 

@@ -60,7 +60,9 @@ const (
 	Quint8     DataType = C.TF_QUINT8
 	Qint32     DataType = C.TF_QINT32
 	Bfloat16   DataType = C.TF_BFLOAT16
-	Posit160   DataType = C.TF_POSIT160
+	Posit16e2   DataType = C.TF_POSIT162
+	Posit8e2   DataType = C.TF_POSIT82
+	Posit32e2   DataType = C.TF_POSIT322
 	Qint16     DataType = C.TF_QINT16
 	Quint16    DataType = C.TF_QUINT16
 	Uint16     DataType = C.TF_UINT16

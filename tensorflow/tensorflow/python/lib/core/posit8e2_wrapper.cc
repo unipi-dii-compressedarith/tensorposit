@@ -14,11 +14,12 @@ limitations under the License.
 ==============================================================================*/
 
 #include "pybind11/pybind11.h"
-#include "tensorflow/python/lib/core/posit160.h"
+#include "tensorflow/python/lib/core/posit8e2.h"
 
-PYBIND11_MODULE(_pywrap_posit160, m) {
-  tensorflow::RegisterNumpyPosit160();
 
-  m.def("TF_posit160_type",
-        [] { return pybind11::handle(tensorflow::Posit160Dtype()); });
+PYBIND11_MODULE(_pywrap_posit8e2, m) {
+  tensorflow::RegisterNumpyPosit8e2();
+
+  m.def("TF_posit8e2_type",
+        [] { return pybind11::handle(tensorflow::posit8e2Dtype()); });
 }
