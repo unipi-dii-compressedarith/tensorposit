@@ -52,10 +52,8 @@ from tensorflow.python import keras
 keras.backend.set_floatx("posit160")
 
 # Or create a tensor of posits
-tp = tf.ones((10,10), dtype=tf.posit160)
+tp16e2 = tf.ones((10,10), dtype=tf.posit16e2)
+tp8e2 = tf.ones((10,10), dtype=tf.posit8e2)
+tp32e2 = tf.ones((10,10), dtype=tf.posit32e2)
 ```
 
-NOTE: posit160 is just a name for the internal posit type (I hope to change it to "posit" in the near future). 
-The default posit configuration is Posit16,2. 
-
-In the releases you can find prebuilt Posit16,2 and Posit8,2 wheels as separate installation. In the future I may want to put them together as posit16 and posit8 dtypes inside tensorflow.
